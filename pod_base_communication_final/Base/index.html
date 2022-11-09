@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>  </head>
+    <link rel="stylesheet" href="./main.css">
+        
+        <!--css stylings-->
+         <style>
+               #data_pod{
+                border: 1px solid #888;
+              }
+              #data_pod th, tr{
+                 font-family:  cursive;
+                border: 1px solid #888;
+                text-transform: uppercase;
+                text-align: left;
+                font-size: 1em;
+              }
+              tr:nth-child(odd) {
+              background-color: #43a047;
+            }
+
+                .action-button
+              {
+                
+                padding: 10px 40px;
+                margin: 0px 10px 10px 0px;
+                float: left;
+                border-radius: 10px;
+                font-family:  cursive;
+                font-size: 25px;
+                color: #FFF;
+                text-decoration: none;  
+              }
+
+              .blue
+              {
+                background-color: #3498DB;
+                
+              }
+
+              .red
+              {
+                background-color: #E74C3C;
+                
+              }
+
+              .green
+              {
+                background-color: #82BF56;
+                
+              }
+
+              .clr{
+                clear:both;
+              }
+        </style>
+
+</head>
+
+<body>
+
+  <h1>Data from Pod</h1>
+    <div>
+      <table id="data_pod">
+          <tr>
+              <th>No. of Data Packets</th> <td id="packet_pod_no"></td>
+          </tr>
+
+          <tr>
+              <th>TEAM ID</th> <td id="Team_Id"></td>
+          </tr>
+           <tr>
+              <th>Status</th> <td id="Status_POD"></td>
+          </tr>
+           <tr>
+              <th>Nav_Acceleration</th> <td id="Nav_Acceleration"></td>
+          </tr>
+           <tr>
+              <th>Nav_Yaw</th> <td id="Nav_Yaw"></td>
+          </tr>
+           <tr>
+              <th>Nav_Pitch</th> <td id="Nav_Pitch"></td>
+          </tr>
+           <tr>
+              <th>Nav_Roll</th> <td id="Nav_Roll"></td>
+          </tr>
+           <tr>
+              <th>Nav_Position</th> <td id="Nav_Position"></td>
+          </tr>
+           <tr>
+              <th>Nav_Velocity</th> <td id="Nav_Velocity"></td>
+          </tr>
+           <tr>
+              <th>Nav_LTS_Brake_1_2</th> <td id="Nav_LTS_Brake_1_2"></td>
+          </tr>
+           <tr>
+              <th>Nav_LTS_Brake_3_4</th> <td id="Nav_LTS_Brake_3_4"></td>
+          </tr>
+           <tr>
+              <th>Nav_RR_Strip_Count</th> <td id="Nav_RR_Strip_Count"></td>
+          </tr>
+           <tr>
+              <th>PWR_Voltage</th> <td id="PWR_Voltage"></td>
+          </tr>
+           <tr>
+              <th>PWR_Current</th> <td id="PWR_Current"></td>
+          </tr>
+           <tr>
+              <th>PWR_Temperature</th> <td id="PWR_Temperature"></td>
+          </tr>
+           <tr>
+              <th>CTRL_Temperature</th> <td id="CTRL_Temperature"></td>
+          </tr>
+           <tr>
+              <th>CTRL_Pressure</th> <td id="CTRL_Pressure"></td>
+          </tr>
+           <tr>
+              <th>CTRL_LTS_Height_1_2</th> <td id="CTRL_LTS_Height_1_2"></td>
+          </tr>
+           <tr>
+              <th>CTRL_LTS_Height_3_4</th> <td id="CTRL_LTS_Height_3_4"></td>
+          </tr>
+
+      </table>
+      <br>
+      <br>
+   </div>
+
+  
+    <button id="stopBtn" class="action-button blue" >stop</button> 
+      
+    <button id="startBtn" class="action-button green" >start</button>
+   <!-- <button id="stopBtn" class="action-button blue" >stop</button> -->
+    <button id="EmgStopBtn" class="action-button red" >Emergency stop</button>
+        <br><br>
+    <button id="EngBrakeBtn" class=" clr action-button green" >Engage brakes</button>
+    <button id="DisengBrakeBtn" class="action-button red" >Disengage brakes</button>
+    <br><br>
+    <button id="ActLevBtn" class=" clr action-button blue" >Actuate Levitation module</button>
+    <button id="UnactLevBtn" class="action-button red" >Unactuate Levitation module</button>
+      <br><br>
+    <button id="EngAuxPropBtn" class="clr action-button green" >Engage Auxiliary Propulsion</button>
+    <button id="DisengAuxPropBtn" class="action-button red" >Disengage Auxiliary Propulsion</button>
+
+<!--js code-->
+     <script  type="text/javascript"  >
+
+                  var socket = io.connect();
+
+                  var packet_pod_no = document.getElementById("packet_pod_no"); 
+                  var team_id =document.getElementById("Team_Id");
+                  var status_pod =document.getElementById("Status_POD");
+                  var nav_acceleration =document.getElementById("Nav_Acceleration");
+                  var nav_yaw =document.getElementById("Nav_Yaw");
+                  var nav_pitch =document.getElementById("Nav_Pitch");
+                  var nav_roll =document.getElementById("Nav_Roll");
+                  var nav_position =document.getElementById("Nav_Position");
+                  var nav_velocity =document.getElementById("Nav_Velocity");
+                  var nav_LTS_Brake_1_2 =document.getElementById("Nav_LTS_Brake_1_2");
+                  var nav_LTS_Brake_3_4 =document.getElementById("Nav_LTS_Brake_3_4");
+                  var nav_RR_Strip_Count =document.getElementById("Nav_RR_Strip_Count");
+                  var pwr_Voltage =document.getElementById("PWR_Voltage");
+                  var pwr_Current =document.getElementById("PWR_Current");
+                  var pwr_Temperature =document.getElementById("PWR_Temperature");
+                  var ctrl_Temperature =document.getElementById("CTRL_Temperature");
+                  var ctrl_Pressure =document.getElementById("CTRL_Pressure");
+                  var ctrl_LTS_Height_1_2 =document.getElementById("CTRL_LTS_Height_1_2");
+                  var ctrl_LTS_Height_3_4 =document.getElementById("CTRL_LTS_Height_3_4");
+               
+                  socket.on('data_send', function(data){
+                    //$('#data_pod').text("teamId:"+data.data_from_pod);
+                    //$('#data_pod').text(data.data_from_pod);
+                    packet_pod_no.innerHTML = data.no_data_packets;
+
+                    team_id.innerHTML=data.Team_Id;
+
+                    status_pod.innerHTML=data.Status_pod;
+                    //console.log(status_pod.innerHTML)
+
+                    nav_acceleration.innerHTML=data.Nav_Acceleration;
+                 
+                    nav_yaw.innerHTML=data.Nav_Yaw;
+                 
+                    nav_pitch.innerHTML=data.Nav_Pitch;
+                 
+                    nav_roll.innerHTML=data.Nav_Roll;
+                 
+                    nav_position.innerHTML=data.Nav_Position;
+                 
+                    nav_velocity.innerHTML=data.Nav_Velocity;
+                 
+                    nav_LTS_Brake_1_2.innerHTML=data.Nav_LTS_Brake_1_2;
+                 
+                    nav_LTS_Brake_3_4.innerHTML=data.Nav_LTS_Brake_3_4;
+
+                    nav_RR_Strip_Count.innerHTML=data.Nav_RR_Strip_Count;
+
+                    pwr_Voltage.innerHTML=data.PWR_Voltage;
+
+                    pwr_Current.innerHTML=data.PWR_Current;
+
+                    pwr_Temperature.innerHTML=data.PWR_Temperature;
+
+                    ctrl_Temperature.innerHTML=data.CTRL_Temperature;
+
+                    ctrl_Pressure.innerHTML=data.CTRL_Pressure;
+
+                    ctrl_LTS_Height_1_2.innerHTML=data.CTRL_LTS_Height_1_2;
+
+                    ctrl_LTS_Height_3_4.innerHTML=data.CTRL_LTS_Height_3_4;
+                 
+                  });
+
+
+
+
+
+
+
+
+
+                  function poststart() {
+                    $.ajax({
+                        type: "POST",
+                        url: "/index.html",
+                        
+                        data: {name:"start" },
+                        success: function(data) {
+                            
+                            //alert('Success!')
+                        }
+                        
+                    });
+                }
+
+                $('#startBtn').on('click', function() {
+                    poststart();
+                });
+
+
+                  function poststop() {
+                    $.ajax({
+                        type: "POST",
+                        url: "http://0.0.0.0:8081/index.html",
+                        
+                        data: {name:"stop" },
+                        success: function(data) {
+                            
+                            //alert('Success!')
+                        }
+                        
+                    });
+                }
+
+                $('#stopBtn').on('click', function() {
+                    poststop();
+                });
+
+
+                  function postEmgStop() {
+                    $.ajax({
+                        type: "POST",
+                        url: "/index.html",
+                        
+                        data: {name:"Emergency stop" },
+                        success: function(data) {
+                            
+                            //alert('Success!')
+                        }
+                        
+                    });
+                }
+
+                $('#EmgStopBtn').on('click', function() {
+                    postEmgStop();
+                });
+
+
+
+
+                  function postEngBrake() {
+                    $.ajax({
+                        type: "POST",
+                        url: "/index.html",
+                        
+                        data: {name:"Engage brakes" },
+                        success: function(data) {
+                            
+                            //alert('Success!')
+                        }
+                        
+                    });
+                }
+
+                $('#EngBrakeBtn').on('click', function() {
+                    postEngBrake();
+                });
+
+
+
+                  function postDisengBrake() {
+                    $.ajax({
+                        type: "POST",
+                        url: "/index.html",
+                        
+                        data: {name:"Disengage brakes" },
+                        success: function(data) {
+                            
+                            //alert('Success!')
+                        }
+                        
+                    });
+                }
+
+                $('#DisengBrakeBtn').on('click', function() {
+                    postDisengBrake();
+                });
+
+
+                  function postActLev() {
+                    $.ajax({
+                        type: "POST",
+                        url: "/index.html",
+                        
+                        data: {name:"Actuate Levitation module" },
+                        success: function(data) {
+                            
+                            //alert('Success!')
+                        }
+                        
+                    });
+                }
+
+                $('#ActLevBtn').on('click', function() {
+                    postActLev();
+                });
+
+                function postUnactLev() {
+                    $.ajax({
+                        type: "POST",
+                        url: "/index.html",
+                        
+                        data: {name:"Unactuate Levitation module" },
+                        success: function(data) {
+                            
+                            //alert('Success!')
+                        }
+                        
+                    });
+                }
+
+                $('#UnactLevBtn').on('click', function() {
+                    postUnactLev();
+                });
+
+                function postEngAuxProp() {
+                    $.ajax({
+                        type: "POST",
+                        url: "/index.html",
+                        
+                        data: {name:"Engage Auxiliary Propulsion" },
+                        success: function(data) {
+                            
+                            //alert('Success!')
+                        }
+                        
+                    });
+                }
+
+                $('#EngAuxPropBtn').on('click', function() {
+                    postEngAuxProp();
+                });
+
+
+                function postDisengAuxProp() {
+                    $.ajax({
+                        type: "POST",
+                        url: "/index.html",
+                        
+                        data: {name:"Disengage Auxiliary Propulsion" },
+                        success: function(data) {
+                            
+                            //alert('Success!')
+                        }
+                        
+                    });
+                }
+
+                $('#DisengAuxPropBtn').on('click', function() {
+                    postDisengAuxProp();
+                });
+
+
+     </script> 
+     
+  </body>
+</html>

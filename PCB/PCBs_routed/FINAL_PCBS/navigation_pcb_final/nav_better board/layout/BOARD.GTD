@@ -1,0 +1,77 @@
+{Environment
+	{FilesPath  E:\PCB\MIRACLE\PCBS\NAV_BETTER BOARD\LAYOUT}
+}
+{Layers
+	{Layer  1
+		{File        BOARD.TOP LAYER}
+		{LyrName     -}
+		{ApList      }
+		{Visibility  On}
+		{FlashColor  red}
+		{DrawColor   red}
+		{Type        Other}
+	}
+	{Layer  2
+		{File        BOARD.BOTTOM LAYER}
+		{LyrName     -}
+		{ApList      }
+		{Visibility  On}
+		{FlashColor  yellow}
+		{DrawColor   yellow}
+		{Type        Other}
+	}
+	{Layer  3
+		{File        BOARD.SOLDER MASK TOP}
+		{LyrName     -}
+		{ApList      }
+		{Visibility  On}
+		{FlashColor  tan}
+		{DrawColor   tan}
+		{Type        Other}
+	}
+	{Layer  4
+		{File        BOARD.SOLDER MASK BOTOM}
+		{LyrName     -}
+		{ApList      }
+		{Visibility  On}
+		{FlashColor  green}
+		{DrawColor   green}
+		{Type        Other}
+	}
+	{Layer  5
+		{File        BOARD.SST}
+		{LyrName     -}
+		{ApList      }
+		{Visibility  On}
+		{FlashColor  orange}
+		{DrawColor   orange}
+		{Type        Other}
+	}
+	{Layer  6
+		{File        BOARD.DRILL DRAWING}
+		{LyrName     -}
+		{ApList      }
+		{Visibility  On}
+		{FlashColor  blue}
+		{DrawColor   blue}
+		{Type        Other}
+	}
+}
+{Format Gerber
+	{Dialect           RS274X}
+	{m.n               2.3}
+	{Mode              Absolute}
+	{ZeroSuppression   Leading}
+	{Terminator        0x2a, 0xD, 0xA}
+	{Metric            No}
+	{Modal             No}
+	{UserData          Yes}
+	{Nets              No}
+	{Gcmds             Yes}
+	{CharSet           ASCII}
+	{Arcs360           No}
+	{ArcsModal         Yes}
+	{HonorCrLf         No}
+	{Comments          Yes}
+	{Flags             0}
+}

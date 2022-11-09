@@ -1,0 +1,213 @@
+I-Logix-RPY-Archive version 8.13.0 * 9794446
+{ CGEMdiWorkspace 
+	- stubList = { IRPYRawContainer 
+		- size = 0;
+	}
+	- isLoadOnDemand = 0;
+	- myViewsWithID = { IRPYRawContainer 
+		- size = 6;
+		- value = 
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -8;
+				- m_ptMaxPositionY = -31;
+				- m_nLeft = 200;
+				- m_nTop = 200;
+				- m_nRight = 1478;
+				- m_nBottom = 699;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "Communication.sbs";
+				- _subsystem = "Communication";
+				- _class = "";
+				- _name = "PackageOverviewCommunication";
+				- _id = GUID 89b628f8-308c-4228-8d9f-aba0bd1aae58;
+			}
+			- _UpLeft = 0 0 ;
+			- _DownRight = 1318 466 ;
+			- _instanceName = "";
+			- m_nDiagramIndex = 3;
+			- m_bIsActiveView = 0;
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 2;
+				- m_showCmd = 3;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -8;
+				- m_ptMaxPositionY = -31;
+				- m_nLeft = 26;
+				- m_nTop = 26;
+				- m_nRight = 849;
+				- m_nBottom = 464;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "DesignArch.sbs";
+				- _subsystem = "DesignArch";
+				- _class = "";
+				- _name = "ProcessView";
+				- _id = GUID 953016d2-f507-437b-8d2c-3c9d7c2eb126;
+			}
+			- _UpLeft = -443 0 ;
+			- _DownRight = 2039 1389 ;
+			- _instanceName = "";
+			- m_nDiagramIndex = 0;
+			- m_bIsActiveView = 1;
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -8;
+				- m_ptMaxPositionY = -31;
+				- m_nLeft = 100;
+				- m_nTop = 100;
+				- m_nRight = 1378;
+				- m_nBottom = 599;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "LogicalView";
+				- _id = GUID 64182b97-ecdb-4e84-9603-d0436d63f6cc;
+			}
+			- _UpLeft = 0 0 ;
+			- _DownRight = 2386 844 ;
+			- _instanceName = "";
+			- m_nDiagramIndex = 2;
+			- m_bIsActiveView = 0;
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -8;
+				- m_ptMaxPositionY = -31;
+				- m_nLeft = 150;
+				- m_nTop = 150;
+				- m_nRight = 1428;
+				- m_nBottom = 649;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "Navigation.sbs";
+				- _subsystem = "Navigation";
+				- _class = "";
+				- _name = "PackageOverviewNavigation";
+				- _id = GUID 609fc976-49f5-45a1-8a37-09b17cf5b087;
+			}
+			- _UpLeft = 109 0 ;
+			- _DownRight = 1350 439 ;
+			- _instanceName = "";
+			- m_nDiagramIndex = 5;
+			- m_bIsActiveView = 0;
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -8;
+				- m_ptMaxPositionY = -31;
+				- m_nLeft = 125;
+				- m_nTop = 125;
+				- m_nRight = 1403;
+				- m_nBottom = 624;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "Navigation.sbs";
+				- _subsystem = "Navigation";
+				- _class = "";
+				- _name = "RequirementsNavigation";
+				- _id = GUID 690170bc-ecb4-495e-9b4d-52446247f856;
+			}
+			- _UpLeft = 0 0 ;
+			- _DownRight = 1243 440 ;
+			- _instanceName = "";
+			- m_nDiagramIndex = 4;
+			- m_bIsActiveView = 0;
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -8;
+				- m_ptMaxPositionY = -31;
+				- m_nLeft = 130;
+				- m_nTop = 130;
+				- m_nRight = 1312;
+				- m_nBottom = 648;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "VehicleController.sbs";
+				- _subsystem = "VehicleController";
+				- _class = "";
+				- _name = "PackageOverview";
+				- _id = GUID 178ca88e-3284-4925-8ab0-4fc5bef6a4d8;
+			}
+			- _UpLeft = 0 0 ;
+			- _DownRight = 1145 458 ;
+			- _instanceName = "";
+			- m_nDiagramIndex = 6;
+			- m_bIsActiveView = 0;
+		}
+	}
+	- _fullName = "C:\\ProgramData\\IBM\\Rational\\Rhapsody\\8.2\\HyperloopGit\\HyperloopIndia\\Hyperloop\\Hyperloop";
+	- _selectedPerspective = "Basic";
+	- m_SearchScopeList = { IRPYRawContainer 
+		- size = 0;
+	}
+	- bUsingCustomBrowserView = 0;
+	- bUsingQueries = 0;
+	- bApplyOnDiagrams = 0;
+	- liQueryIDs = { IRPYRawContainer 
+		- size = 0;
+	}
+	- liElementTypes = { IRPYRawContainer 
+		- size = 0;
+	}
+	- mapOslcRmCollections = { IRPYRawContainer 
+		- size = 0;
+	}
+
+	- m_favoritesTree = {
+		count=1;
+		{ - favoritesItem
+			generation = 0;
+			name = Favorites;
+			idOrFolder = folder;
+		}
+	}
+
+}
+

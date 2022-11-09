@@ -1,0 +1,141 @@
+I-Logix-RPY-Archive version 8.13.0 C++ 9794446
+{ IComponent 
+	- _id = GUID a10948f3-0b1e-46c1-97fe-33db798ab3c4;
+	- _myState = 8192;
+	- _name = "BaseStation";
+	- Stereotypes = { IRPYRawContainer 
+		- size = 1;
+		- value = 
+		{ IHandle 
+			- _m2Class = "IStereotype";
+			- _filename = "Navigation.sbs";
+			- _subsystem = "Navigation";
+			- _class = "";
+			- _name = "stereotype_33";
+			- _id = GUID 29c7a27a-56d9-4d20-9955-7aedea4bf4e7;
+		}
+	}
+	- _modifiedTimeWeak = 2.14.2017::15:44:2;
+	- Declaratives = { IRPYRawContainer 
+		- size = 3;
+		- value = 
+		{ IComponent 
+			- fileName = "TCPServerSocket";
+			- _id = GUID 8ae581b0-8634-4f14-9c4a-47b4fadf2ba3;
+		}
+		{ IComponent 
+			- fileName = "GUI";
+			- _id = GUID 8ab274a4-2f17-4a79-ab1f-9dd36909f3c7;
+		}
+		{ IComponent 
+			- fileName = "TCPClientSocket";
+			- _id = GUID 284c24c8-0b7b-4957-9d79-cfa9c7434141;
+		}
+	}
+	- m_buildType = Executable;
+	- m_libraries = "";
+	- m_additionalSources = "";
+	- m_standardHeaders = "";
+	- m_includePath = "";
+	- m_initializationCode = "";
+	- m_folder = { IFolder 
+		- _id = GUID 699514d7-1e4f-4a0a-822e-509d5a06ed0a;
+		- _myState = 73728;
+		- _name = "Files";
+		- _modifiedTimeWeak = 2.14.2017::13:29:43;
+		- m_path = "";
+		- Elements = { IRPYRawContainer 
+			- size = 0;
+		}
+		- Files = { IRPYRawContainer 
+			- size = 0;
+		}
+	}
+	- m_configActive = { ICodeGenConfigInfoHandle 
+		- _m2Class = "ICodeGenConfigInfo";
+		- _id = GUID 6a8e1163-92ff-4709-a182-9027067b723f;
+	}
+	- Configs = { IRPYRawContainer 
+		- size = 1;
+		- value = 
+		{ ICodeGenConfigInfo 
+			- _id = GUID 6a8e1163-92ff-4709-a182-9027067b723f;
+			- _myState = 8192;
+			- _name = "DefaultConfig";
+			- _modifiedTimeWeak = 1.2.1990::0:0:0;
+			- HyperLinks = { IRPYRawContainer 
+				- size = 2;
+				- value = 
+				{ IMHyperLink 
+					- _id = GUID a60d98f1-9dec-4551-854f-cd92da4d3a21;
+					- _modifiedTimeWeak = 1.2.1990::0:0:0;
+					- _dependsOn = { INObjectHandle 
+						- _m2Class = "";
+					}
+					- _linkDispName = "Edit Makefile";
+					- _linkType = "FREE";
+					- _linkTarget = "C:/Users/Devika/Downloads/HyperloopIndia-master/HyperloopIndia-master/Hyperloop/BaseStation/DefaultConfig/BaseStation.mak";
+					- isConfigurationFileHyperLink = 1;
+				}
+				{ IMHyperLink 
+					- _id = GUID a4bba0b5-368c-4b8a-912e-fa6bfc85878f;
+					- _modifiedTimeWeak = 1.2.1990::0:0:0;
+					- _dependsOn = { INObjectHandle 
+						- _m2Class = "";
+					}
+					- _linkDispName = "Edit Main File";
+					- _linkType = "FREE";
+					- _linkTarget = "C:/Users/Devika/Downloads/HyperloopIndia-master/HyperloopIndia-master/Hyperloop/BaseStation/DefaultConfig/MainBaseStation";
+					- isConfigurationFileHyperLink = 1;
+				}
+			}
+			- _scopeType = Explicit;
+			- _libraries = "";
+			- _additionalSources = "";
+			- _standardHeaders = "";
+			- _includePath = "";
+			- _targetMain = "";
+			- _instrumentation = None;
+			- _timeModel = RealTime;
+			- m_generateActors = 1;
+			- _statechartImplementation = Flat;
+			- _initializationCode = "";
+			- _checksList = 0 ;
+			- ScopeElements = { IRPYRawContainer 
+				- size = 0;
+			}
+			- InitialInstances = { IRPYRawContainer 
+				- size = 0;
+			}
+			- _root = { IFolder 
+				- _id = GUID 3d536ab2-7ea5-4986-a3b5-bbc04d7e30eb;
+				- _myState = 8192;
+				- _name = "DefaultConfig";
+				- _modifiedTimeWeak = 1.2.1990::0:0:0;
+				- m_path = "";
+				- Elements = { IRPYRawContainer 
+					- size = 0;
+				}
+				- Files = { IRPYRawContainer 
+					- size = 0;
+				}
+			}
+			- weakCGTime = 1.2.1990::0:0:0;
+			- strongCGTime = 1.2.1990::0:0:0;
+			- AnimScopeElements = { IRPYRawContainer 
+				- size = 0;
+			}
+			- m_allInAnimScope = 1;
+			- m_generateUsecases = 0;
+		}
+	}
+	- VariationPoints = { IRPYRawContainer 
+		- size = 0;
+	}
+	- SelectedVariants = { IRPYRawContainer 
+		- size = 0;
+	}
+	- weakCGTime = 2.14.2017::15:44:2;
+	- strongCGTime = 2.14.2017::15:44:2;
+}
+

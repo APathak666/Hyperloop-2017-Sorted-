@@ -1,0 +1,331 @@
+I-Logix-RPY-Archive version 8.13.0 C++ 9794446
+{ ISubsystem 
+	- _id = GUID 0e1fe3bb-031a-45b4-ad34-ab9fe93944c3;
+	- _myState = 8192;
+	- _name = "Interface";
+	- _modifiedTimeWeak = 2.12.2017::19:40:7;
+	- _lastID = 12;
+	- weakCGTime = 2.12.2017::19:40:7;
+	- strongCGTime = 2.12.2017::16:23:28;
+	- _defaultComposite = GUID 666c8c29-937d-4223-b088-c8578c27eb72;
+	- _eventsBaseID = -1;
+	- Classes = { IRPYRawContainer 
+		- size = 13;
+		- value = 
+		{ IClass 
+			- _id = GUID 666c8c29-937d-4223-b088-c8578c27eb72;
+			- _myState = 40960;
+			- _name = "TopLevel";
+			- _modifiedTimeWeak = 1.2.1990::0:0:0;
+			- weakCGTime = 1.2.1990::0:0:0;
+			- strongCGTime = 1.2.1990::0:0:0;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 69a60cff-eafa-41ea-bf8b-3c59580034fc;
+			- _myState = 8192;
+			- _name = "Navigation_VehicleController";
+			- Stereotypes = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IStereotype";
+					- _filename = "PredefinedTypes.sbs";
+					- _subsystem = "PredefinedTypes";
+					- _class = "";
+					- _name = "Interface";
+					- _id = GUID 2a7b8a63-f54f-4379-bab0-02800a5084e1;
+				}
+			}
+			- _modifiedTimeWeak = 2.12.2017::19:27:36;
+			- weakCGTime = 2.12.2017::19:27:36;
+			- strongCGTime = 2.12.2017::19:27:36;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 4228b480-2664-4f25-981a-a75cd110816f;
+			- _myState = 8192;
+			- _name = "Navigation_Communication";
+			- Stereotypes = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IStereotype";
+					- _filename = "PredefinedTypes.sbs";
+					- _subsystem = "PredefinedTypes";
+					- _class = "";
+					- _name = "Interface";
+					- _id = GUID 2a7b8a63-f54f-4379-bab0-02800a5084e1;
+				}
+			}
+			- _modifiedTimeWeak = 2.12.2017::19:35:44;
+			- weakCGTime = 2.12.2017::19:35:44;
+			- strongCGTime = 2.12.2017::19:35:44;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID b9959a17-07cb-4d1a-8118-e9959c6c963e;
+			- _myState = 8192;
+			- _name = "Communication_Navigation";
+			- Stereotypes = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IStereotype";
+					- _filename = "PredefinedTypes.sbs";
+					- _subsystem = "PredefinedTypes";
+					- _class = "";
+					- _name = "Interface";
+					- _id = GUID 2a7b8a63-f54f-4379-bab0-02800a5084e1;
+				}
+			}
+			- _modifiedTimeWeak = 2.12.2017::19:35:59;
+			- weakCGTime = 2.12.2017::19:35:59;
+			- strongCGTime = 2.12.2017::19:35:59;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 13aa91f3-3cac-43d1-a781-4c79bfc5268f;
+			- _myState = 8192;
+			- _name = "VehicleController_Navigation";
+			- Stereotypes = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IStereotype";
+					- _filename = "PredefinedTypes.sbs";
+					- _subsystem = "PredefinedTypes";
+					- _class = "";
+					- _name = "Interface";
+					- _id = GUID 2a7b8a63-f54f-4379-bab0-02800a5084e1;
+				}
+			}
+			- _modifiedTimeWeak = 2.12.2017::19:37:0;
+			- weakCGTime = 2.12.2017::19:37:0;
+			- strongCGTime = 2.12.2017::19:37:0;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 6eb4100e-0112-42b2-8a34-3adf18fd7baa;
+			- _myState = 8192;
+			- _name = "Communication_VehicleController";
+			- Stereotypes = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IStereotype";
+					- _filename = "PredefinedTypes.sbs";
+					- _subsystem = "PredefinedTypes";
+					- _class = "";
+					- _name = "Interface";
+					- _id = GUID 2a7b8a63-f54f-4379-bab0-02800a5084e1;
+				}
+			}
+			- _modifiedTimeWeak = 2.12.2017::19:37:14;
+			- weakCGTime = 2.12.2017::19:37:14;
+			- strongCGTime = 2.12.2017::19:37:14;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 7da76e03-3104-482c-a0d1-dfe0bb700b0f;
+			- _myState = 8192;
+			- _name = "VehicleController_Communication";
+			- Stereotypes = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IStereotype";
+					- _filename = "PredefinedTypes.sbs";
+					- _subsystem = "PredefinedTypes";
+					- _class = "";
+					- _name = "Interface";
+					- _id = GUID 2a7b8a63-f54f-4379-bab0-02800a5084e1;
+				}
+			}
+			- _modifiedTimeWeak = 2.12.2017::19:38:20;
+			- weakCGTime = 2.12.2017::19:38:20;
+			- strongCGTime = 2.12.2017::19:38:20;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID dc6b623a-32c2-4002-8860-188838db182c;
+			- _myState = 8192;
+			- _name = "Power_Navigation";
+			- Stereotypes = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IStereotype";
+					- _filename = "PredefinedTypes.sbs";
+					- _subsystem = "PredefinedTypes";
+					- _class = "";
+					- _name = "Interface";
+					- _id = GUID 2a7b8a63-f54f-4379-bab0-02800a5084e1;
+				}
+			}
+			- _modifiedTimeWeak = 2.12.2017::19:39:1;
+			- weakCGTime = 2.12.2017::19:39:1;
+			- strongCGTime = 2.12.2017::19:39:1;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID f5fac1c9-68a5-4884-a0db-c0401f71d096;
+			- _myState = 8192;
+			- _name = "Navigation_Power";
+			- Stereotypes = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IStereotype";
+					- _filename = "PredefinedTypes.sbs";
+					- _subsystem = "PredefinedTypes";
+					- _class = "";
+					- _name = "Interface";
+					- _id = GUID 2a7b8a63-f54f-4379-bab0-02800a5084e1;
+				}
+			}
+			- _modifiedTimeWeak = 2.12.2017::19:39:11;
+			- weakCGTime = 2.12.2017::19:39:11;
+			- strongCGTime = 2.12.2017::19:39:11;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 8bec0692-e7d7-4160-875c-903a9d09b955;
+			- _myState = 8192;
+			- _name = "Power_VehicleController";
+			- Stereotypes = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IStereotype";
+					- _filename = "PredefinedTypes.sbs";
+					- _subsystem = "PredefinedTypes";
+					- _class = "";
+					- _name = "Interface";
+					- _id = GUID 2a7b8a63-f54f-4379-bab0-02800a5084e1;
+				}
+			}
+			- _modifiedTimeWeak = 2.12.2017::19:39:32;
+			- weakCGTime = 2.12.2017::19:39:32;
+			- strongCGTime = 2.12.2017::19:39:32;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 1d239eff-c879-4977-a020-445183afffad;
+			- _myState = 8192;
+			- _name = "VehicleController_Power";
+			- Stereotypes = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IStereotype";
+					- _filename = "PredefinedTypes.sbs";
+					- _subsystem = "PredefinedTypes";
+					- _class = "";
+					- _name = "Interface";
+					- _id = GUID 2a7b8a63-f54f-4379-bab0-02800a5084e1;
+				}
+			}
+			- _modifiedTimeWeak = 2.12.2017::19:39:46;
+			- weakCGTime = 2.12.2017::19:39:46;
+			- strongCGTime = 2.12.2017::19:39:46;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 185613fa-080b-4779-94f4-f4fc0bfc0ae0;
+			- _myState = 8192;
+			- _name = "Power_Communication";
+			- Stereotypes = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IStereotype";
+					- _filename = "PredefinedTypes.sbs";
+					- _subsystem = "PredefinedTypes";
+					- _class = "";
+					- _name = "Interface";
+					- _id = GUID 2a7b8a63-f54f-4379-bab0-02800a5084e1;
+				}
+			}
+			- _modifiedTimeWeak = 2.12.2017::19:40:3;
+			- weakCGTime = 2.12.2017::19:40:3;
+			- strongCGTime = 2.12.2017::19:40:3;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 4fdab87e-d376-4725-9f2b-407f80bccea9;
+			- _myState = 8192;
+			- _name = "Communication_Power";
+			- Stereotypes = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IStereotype";
+					- _filename = "PredefinedTypes.sbs";
+					- _subsystem = "PredefinedTypes";
+					- _class = "";
+					- _name = "Interface";
+					- _id = GUID 2a7b8a63-f54f-4379-bab0-02800a5084e1;
+				}
+			}
+			- _modifiedTimeWeak = 2.12.2017::19:40:14;
+			- weakCGTime = 2.12.2017::19:40:14;
+			- strongCGTime = 2.12.2017::19:40:14;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+	}
+	- _configurationRelatedTime = 1.1.1970::5:30:0;
+}
+

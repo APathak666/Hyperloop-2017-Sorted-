@@ -1,0 +1,112 @@
+/*================================
+      POSITION INDICATOR SYLES
+=================================*/
+
+$height: 18rem;
+$count_label_font_size: 1.4rem;
+$count_font_size: 1.5rem;
+$label_font_size: 1rem;
+$value_font_size: 3rem;
+$unit_font_size: 1.4rem;
+
+.position-indicator-container {
+    width: 25rem;
+    height: $height;
+    position: relative;
+}
+.position-indicator {
+    .outer-ring {
+        width: 20rem;
+        height: 18rem;
+        position: absolute;
+        top: calc(50% - 6rem);
+        left: calc(50% - 10rem);
+        border-radius: 50%;
+    }
+    .digit-ring {
+        position: absolute;
+        top: calc(50% + 3.5rem);
+        left: 50%;
+    }
+    .tick {
+        width: 1.6rem;
+        border-top: 2px solid #3b3d45;
+        position: absolute;
+        top: calc(50% - 0.1rem);
+        left: calc(50% - 0.8rem);
+
+    }
+    .digit {
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        top: calc(50% - 1rem);
+        left: calc(50% - 1rem);
+        font-weight: bold;
+        text-align: center;
+        line-height: 2rem;
+    }
+    .details {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 21rem;
+        height: 18rem;
+        position: absolute;
+        padding-top: calc(13.8rem - #{$count_font_size} - #{$count_label_font_size} - #{$label_font_size} - #{$value_font_size} - #{$unit_font_size});
+        top: 0;
+        left: calc(50% - 10.5rem);
+    }    
+    .count-label {
+        font-size: $count_label_font_size;
+        text-transform: uppercase;
+        .count {
+            color: #fff;
+            font-size: $count_font_size;
+        }
+    }
+    .label {
+        margin: 0;
+        font-size: $label_font_size;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .value {
+        margin: 0;
+        font-size: $value_font_size;
+        color: #fff;
+    }
+    .unit {
+        margin: 0;
+        font-size: $unit_font_size;
+    }
+    .guage-progress {
+        width: 10rem;
+        height: 10rem;
+        position: absolute;
+        top: calc(50% - 1.5rem);
+        left: calc(50% - 5rem);
+        border-radius: 50%;
+        &:before {
+            content: "";
+            position: absolute;
+            top: -0.2rem;
+            left: calc(50% - 0.3rem);
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 50%;
+            background-color: #f1252e;
+            box-shadow: 0 0 6rem 2rem rgba(241, 37, 46, 0.35);
+        }
+    }
+}

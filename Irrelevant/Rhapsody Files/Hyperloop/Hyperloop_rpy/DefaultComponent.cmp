@@ -1,0 +1,173 @@
+I-Logix-RPY-Archive version 8.13.0 C++ 9794446
+{ IComponent 
+	- _id = GUID d678d2a6-bd1d-4f1d-a20f-85af97bf1fc7;
+	- _myState = 139264;
+	- _name = "DefaultComponent";
+	- _modifiedTimeWeak = 2.12.2017::16:18:35;
+	- m_buildType = Executable;
+	- m_libraries = "";
+	- m_additionalSources = "";
+	- m_standardHeaders = "";
+	- m_includePath = "";
+	- m_initializationCode = "";
+	- m_folder = { IFolder 
+		- _id = GUID 751d1549-6129-450c-a0a6-e0e921b1124e;
+		- _myState = 73728;
+		- _name = "Files";
+		- _modifiedTimeWeak = 2.12.2017::16:18:35;
+		- m_path = "";
+		- Elements = { IRPYRawContainer 
+			- size = 0;
+		}
+		- Files = { IRPYRawContainer 
+			- size = 0;
+		}
+	}
+	- m_configActive = { ICodeGenConfigInfoHandle 
+		- _m2Class = "ICodeGenConfigInfo";
+		- _id = GUID 67a41021-6bd0-4798-abf9-064b75499be2;
+	}
+	- Configs = { IRPYRawContainer 
+		- size = 1;
+		- value = 
+		{ ICodeGenConfigInfo 
+			- _id = GUID 67a41021-6bd0-4798-abf9-064b75499be2;
+			- _myState = 8192;
+			- _name = "DefaultConfig";
+			- _modifiedTimeWeak = 1.2.1990::0:0:0;
+			- HyperLinks = { IRPYRawContainer 
+				- size = 2;
+				- value = 
+				{ IMHyperLink 
+					- _id = GUID 21a31ce9-984e-4f52-8795-3e8cedb00482;
+					- _modifiedTimeWeak = 1.2.1990::0:0:0;
+					- _dependsOn = { INObjectHandle 
+						- _m2Class = "";
+					}
+					- _linkDispName = "Edit Makefile";
+					- _linkType = "FREE";
+					- _linkTarget = "C:/Users/Devika/Downloads/HyperloopIndia-master/HyperloopIndia-master/Hyperloop/DefaultComponent/DefaultConfig/DefaultComponent.mak";
+					- isConfigurationFileHyperLink = 1;
+				}
+				{ IMHyperLink 
+					- _id = GUID 42d625f6-6f57-4022-be34-80c2cf66beec;
+					- _modifiedTimeWeak = 1.2.1990::0:0:0;
+					- _dependsOn = { INObjectHandle 
+						- _m2Class = "";
+					}
+					- _linkDispName = "Edit Main File";
+					- _linkType = "FREE";
+					- _linkTarget = "C:/Users/Devika/Downloads/HyperloopIndia-master/HyperloopIndia-master/Hyperloop/DefaultComponent/DefaultConfig/MainDefaultComponent";
+					- isConfigurationFileHyperLink = 1;
+				}
+			}
+			- _scopeType = Explicit;
+			- _libraries = "";
+			- _additionalSources = "";
+			- _standardHeaders = "";
+			- _includePath = "";
+			- _targetMain = "";
+			- _instrumentation = None;
+			- _timeModel = RealTime;
+			- m_generateActors = 1;
+			- _statechartImplementation = Flat;
+			- _initializationCode = "";
+			- _checksList = 0 ;
+			- ScopeElements = { IRPYRawContainer 
+				- size = 0;
+			}
+			- InitialInstances = { IRPYRawContainer 
+				- size = 0;
+			}
+			- _root = { IFolder 
+				- _id = GUID 88311bdd-9412-4bd8-89cf-b01eefc1abf5;
+				- _myState = 8192;
+				- _name = "DefaultConfig";
+				- _modifiedTimeWeak = 1.2.1990::0:0:0;
+				- m_path = "";
+				- Elements = { IRPYRawContainer 
+					- size = 0;
+				}
+				- Files = { IRPYRawContainer 
+					- size = 0;
+				}
+			}
+			- weakCGTime = 1.2.1990::0:0:0;
+			- strongCGTime = 1.2.1990::0:0:0;
+			- AnimScopeElements = { IRPYRawContainer 
+				- size = 0;
+			}
+			- m_allInAnimScope = 1;
+			- m_generateUsecases = 0;
+		}
+	}
+	- HandlesInMe = { IRPYRawContainer 
+		- size = 7;
+		- value = 
+		{ IHandle 
+			- _m2Class = "ISubsystem";
+			- _filename = "Navigation.sbs";
+			- _subsystem = "";
+			- _class = "";
+			- _name = "Navigation";
+			- _id = GUID 7fe5c124-dcc3-4f3f-95c6-d18e642d5a8e;
+		}
+		{ IHandle 
+			- _m2Class = "IProfile";
+			- _filename = "$OMROOT\\Settings\\UMLPerspectives\\UMLPerspectives.sbs";
+			- _subsystem = "";
+			- _class = "";
+			- _name = "UMLPerspectives";
+			- _id = GUID d24d9192-bc4f-48a2-a4e1-fdaebbdfa6b6;
+		}
+		{ IHandle 
+			- _m2Class = "ISubsystem";
+			- _filename = "VehicleController.sbs";
+			- _subsystem = "";
+			- _class = "";
+			- _name = "VehicleController";
+			- _id = GUID efb75952-3910-4867-99ef-1f86394d7b47;
+		}
+		{ IHandle 
+			- _m2Class = "ISubsystem";
+			- _filename = "Communication.sbs";
+			- _subsystem = "";
+			- _class = "";
+			- _name = "Communication";
+			- _id = GUID a1a57b15-0ea6-45f0-8c17-91875f428361;
+		}
+		{ IHandle 
+			- _m2Class = "ISubsystem";
+			- _filename = "Power.sbs";
+			- _subsystem = "";
+			- _class = "";
+			- _name = "Power";
+			- _id = GUID 2def51f8-4952-4ce4-8578-1c89f94e2875;
+		}
+		{ IHandle 
+			- _m2Class = "ISubsystem";
+			- _filename = "DesignArch.sbs";
+			- _subsystem = "";
+			- _class = "";
+			- _name = "DesignArch";
+			- _id = GUID 215b05db-40f9-4190-9cd9-2807e88ac6f4;
+		}
+		{ IHandle 
+			- _m2Class = "ISubsystem";
+			- _filename = "Interface.sbs";
+			- _subsystem = "";
+			- _class = "";
+			- _name = "Interface";
+			- _id = GUID 0e1fe3bb-031a-45b4-ad34-ab9fe93944c3;
+		}
+	}
+	- VariationPoints = { IRPYRawContainer 
+		- size = 0;
+	}
+	- SelectedVariants = { IRPYRawContainer 
+		- size = 0;
+	}
+	- weakCGTime = 2.12.2017::16:18:35;
+	- strongCGTime = 1.2.1990::0:0:0;
+}
+

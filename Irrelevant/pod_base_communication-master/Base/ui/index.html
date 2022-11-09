@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>  </head>
+    <link rel="stylesheet" href="./main.css">
+        
+        <!--css stylings-->
+         <style>
+               #data_pod{
+                border: 1px solid #888;
+              }
+              #data_pod th, tr{
+                 font-family:  cursive;
+                border: 1px solid #888;
+                text-transform: uppercase;
+                text-align: left;
+                font-size: 1em;
+              }
+              tr:nth-child(odd) {
+              background-color: #43a047;
+            }
+
+                .action-button
+              {
+                
+                padding: 10px 40px;
+                margin: 0px 10px 10px 0px;
+                float: left;
+                border-radius: 10px;
+                font-family:  cursive;
+                font-size: 25px;
+                color: #FFF;
+                text-decoration: none;  
+              }
+
+              .blue
+              {
+                background-color: #3498DB;
+                
+              }
+
+              .red
+              {
+                background-color: #E74C3C;
+                
+              }
+
+              .green
+              {
+                background-color: #82BF56;
+                
+              }
+
+              .clr{
+                clear:both;
+              }
+        </style>
+
+</head>
+
+<body>
+
+  <h1>Data from Pod</h1>
+    <div>
+      <table id="data_pod">
+          <tr>
+              <th>No. of Data Packets</th> <td id="packet_pod_no"></td>
+          </tr>
+
+          <tr>
+              <th>TEAM ID</th> <td id="team_id"></td>
+          </tr>
+           <tr>
+              <th>status</th> <td id="stat"></td>
+          </tr>
+           <tr>
+              <th>acceleration</th> <td id="acceleration"></td>
+          </tr>
+           <tr>
+              <th>position</th> <td id="position"></td>
+          </tr>
+           <tr>
+              <th>velocity</th> <td id="velocity"></td>
+          </tr>
+           <tr>
+              <th>battery_voltage</th> <td id="battery_voltage"></td>
+          </tr>
+           <tr>
+              <th>battery_current</th> <td id="battery_current"></td>
+          </tr>
+           <tr>
+              <th>battery_temperature</th> <td id="battery_temperature"></td>
+          </tr>
+           <tr>
+              <th>pod_temperature</th> <td id="pod_temperature"></td>
+          </tr>
+           <tr>
+              <th>stripe_count</th> <td id="stripe_count"></td>
+          </tr>
+      </table>
+      <br>
+      <br>
+   </div>
+
+
+
+    <button id="startBtn" class="action-button green" >start</button>
+    <button id="stopBtn" class="action-button blue" >stop</button>
+    <button id="EmgStopBtn" class="action-button red" >Emergency stop</button>
+        <br><br>
+    <button id="EngBrakeBtn" class=" clr action-button green" >Engage brakes</button>
+    <button id="DisengBrakeBtn" class="action-button red" >Disengage brakes</button>
+    <br><br>
+    <button id="ActLevBtn" class=" clr action-button blue" >Actuate Levitation module</button>
+    <button id="UnactLevBtn" class="action-button red" >Unactuate Levitation module</button>
+      <br><br>
+    <button id="EngAuxPropBtn" class="clr action-button green" >Engage Auxiliary Propulsion</button>
+    <button id="DisengAuxPropBtn" class="action-button red" >Disengage Auxiliary Propulsion</button>
+
+<!--js code-->
+     <script  type="text/javascript"  >
+                  var socket = io.connect();
+                  var packet_pod_no = document.getElementById("packet_pod_no"); 
+                  var team_id=document.getElementById("team_id");
+                  var stat=document.getElementById("stat");
+                  var acceleration=document.getElementById("acceleration");
+                  var position=document.getElementById("position");
+                  var velocity=document.getElementById("velocity");
+                  var battery_voltage=document.getElementById("battery_voltage");
+                  var battery_current=document.getElementById("battery_current");
+                  var battery_temperature=document.getElementById("battery_temperature");
+                  var pod_temperature=document.getElementById("pod_temperature");
+                  var stripe_count=document.getElementById("stripe_count");
+                  /*socket.on('now_playing', function(data){
+                    $('#now_playing').text(data.now_playing);
+                  });*/
+
+                 /* socket.on('available_songs', function(data){
+                    $('#available_songs').text(data.available_songs);
+                  });*/
+
+                  socket.on('data_send', function(data){
+                    //$('#data_pod').text("teamId:"+data.data_from_pod);
+                    //$('#data_pod').text(data.data_from_pod);
+                    packet_pod_no.innerHTML = data.no_data_packets;
+                    team_id.innerHTML=data.team_id;
+                    stat.innerHTML=data.stat;
+                 
+                    acceleration.innerHTML=data.acceleration;
+                 
+                    position.innerHTML=data.position;
+                 
+                    velocity.innerHTML=data.velocity;
+                 
+                    battery_voltage.innerHTML=data.battery_voltage;
+                 
+                    battery_current.innerHTML=data.battery_current;
+                 
+                    battery_temperature.innerHTML=data.battery_temperature;
+                 
+                    pod_temperature.innerHTML=data.pod_temperature;
+                 
+                    stripe_count.innerHTML=data.stripe_count;
+                 
+                  });
+
+
+
+
+
+
+
+
+
+                  function poststart() {
+                    $.ajax({
+                        type: "POST",
+                        url: "http://192.168.0.51:8081/index.html",
+                        
+                        data: {name:"start" },
+                        success: function(data) {
+                            
+                            //alert('Success!')
+                        }
+                        
+                    });
+                }
+
+                $('#startBtn').on('click', function() {
+                    poststart();
+                });
+
+
+                  function poststop() {
+                    $.ajax({
+                        type: "POST",
+                        url: "http://0.0.0.0:8081/index.html",
+                        
+                        data: {name:"stop" },
+                        success: function(data) {
+                            
+                            alert('Success!')
+                        }
+                        
+                    });
+                }
+
+                $('#stopBtn').on('click', function() {
+                    poststop();
+                });
+
+
+                  function postEmgStop() {
+                    $.ajax({
+                        type: "POST",
+                        url: "http://192.168.0.51:8081/index.html",
+                        
+                        data: {name:"Emergency stop" },
+                        success: function(data) {
+                            
+                            alert('Success!')
+                        }
+                        
+                    });
+                }
+
+                $('#EmgStopBtn').on('click', function() {
+                    postEmgStop();
+                });
+
+
+
+
+                  function postEngBrake() {
+                    $.ajax({
+                        type: "POST",
+                        url: "http://0.0.0.0:8081/index.html",
+                        
+                        data: {name:"Engage brakes" },
+                        success: function(data) {
+                            
+                            alert('Success!')
+                        }
+                        
+                    });
+                }
+
+                $('#EngBrakeBtn').on('click', function() {
+                    postEngBrake();
+                });
+
+
+
+                  function postDisengBrake() {
+                    $.ajax({
+                        type: "POST",
+                        url: "http://0.0.0.0:8081/index.html",
+                        
+                        data: {name:"Disengage brakes" },
+                        success: function(data) {
+                            
+                            alert('Success!')
+                        }
+                        
+                    });
+                }
+
+                $('#DisengBrakeBtn').on('click', function() {
+                    postDisengBrake();
+                });
+
+
+                  function postActLev() {
+                    $.ajax({
+                        type: "POST",
+                        url: "http://0.0.0.0:8081/index.html",
+                        
+                        data: {name:"Actuate Levitation module" },
+                        success: function(data) {
+                            
+                            alert('Success!')
+                        }
+                        
+                    });
+                }
+
+                $('#ActLevBtn').on('click', function() {
+                    postActLev();
+                });
+
+                function postUnactLev() {
+                    $.ajax({
+                        type: "POST",
+                        url: "http://0.0.0.0:8081/index.html",
+                        
+                        data: {name:"Unactuate Levitation module" },
+                        success: function(data) {
+                            
+                            alert('Success!')
+                        }
+                        
+                    });
+                }
+
+                $('#UnactLevBtn').on('click', function() {
+                    postUnactLev();
+                });
+
+                function postEngAuxProp() {
+                    $.ajax({
+                        type: "POST",
+                        url: "http://0.0.0.0:8081/index.html",
+                        
+                        data: {name:"Engage Auxiliary Propulsion" },
+                        success: function(data) {
+                            
+                            alert('Success!')
+                        }
+                        
+                    });
+                }
+
+                $('#EngAuxPropBtn').on('click', function() {
+                    postEngAuxProp();
+                });
+
+
+                function postDisengAuxProp() {
+                    $.ajax({
+                        type: "POST",
+                        url: "http://0.0.0.0:8081/index.html",
+                        
+                        data: {name:"Disengage Auxiliary Propulsion" },
+                        success: function(data) {
+                            
+                            alert('Success!')
+                        }
+                        
+                    });
+                }
+
+                $('#DisengAuxPropBtn').on('click', function() {
+                    postDisengAuxProp();
+                });
+
+
+     </script> 
+     
+  </body>
+</html>

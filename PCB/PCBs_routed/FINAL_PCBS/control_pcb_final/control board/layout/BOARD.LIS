@@ -1,0 +1,190 @@
+Post Processor Report
+OrCAD FILE: E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Thu Jul 13 01:51:32 2017
+
+*********************************************************
+
+Output file: E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.TOP LAYER
+
+Aperture totals for E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.TOP LAYER:
+---------------------------------------------------------
+D10:  0.0980 SQUARE --       0 Draws,       2 Flashes
+D11:  0.0980 ROUND  --       0 Draws,       8 Flashes
+D12:  0.0750 ROUND  --       0 Draws,      64 Flashes
+D13:  0.0750 SQUARE --       0 Draws,      10 Flashes
+D18:  0.0200 ROUND  --       0 Draws,       5 Flashes
+D19:  0.0980 x 0.0590 OBLONG    -----      14 Flashes
+D20:  0.1200 ROUND  --       0 Draws,       8 Flashes
+D21:  0.0630 ROUND  --       0 Draws,      52 Flashes
+D22:  0.0630 SQUARE --       0 Draws,       8 Flashes
+D23:  0.0590 x 0.0980 OBLONG    -----       4 Flashes
+D24:  0.0790 ROUND  --       0 Draws,      77 Flashes
+D25:  0.0980 x 0.0790 OBLONG    -----       9 Flashes
+D29:  0.0100 ROUND  --      35 Draws,       0 Flashes
+D30:  0.0140 ROUND  --       0 Draws,     362 Flashes
+D48:  0.0120 ROUND  --     291 Draws,       0 Flashes
+D52:  0.0790 x 0.0630 OBLONG    -----      48 Flashes
+D53:  0.0430 ROUND  --       0 Draws,      47 Flashes
+D54:  0.0200 ROUND  --      52 Draws,       0 Flashes
+D55:  0.0390 ROUND  --     176 Draws,       0 Flashes
+D56:  0.0350 ROUND  --      13 Draws,       0 Flashes
+D63:  0.0790 x 0.0980 OBLONG    -----       6 Flashes
+---------------------------------------------------------
+ 21 D-Codes      -----     567 Draws,     724 Flashes
+
+*********************************************************
+
+Output file: E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.BOTTOM LAYER
+
+Aperture totals for E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.BOTTOM LAYER:
+---------------------------------------------------------
+D10:  0.0980 SQUARE --       0 Draws,       2 Flashes
+D11:  0.0980 ROUND  --       0 Draws,       8 Flashes
+D12:  0.0750 ROUND  --       0 Draws,      64 Flashes
+D13:  0.0750 SQUARE --       0 Draws,      10 Flashes
+D18:  0.0200 ROUND  --       0 Draws,       5 Flashes
+D19:  0.0980 x 0.0590 OBLONG    -----      14 Flashes
+D20:  0.1200 ROUND  --       0 Draws,       8 Flashes
+D21:  0.0630 ROUND  --       0 Draws,      52 Flashes
+D22:  0.0630 SQUARE --       0 Draws,       8 Flashes
+D23:  0.0590 x 0.0980 OBLONG    -----       4 Flashes
+D24:  0.0790 ROUND  --       0 Draws,      77 Flashes
+D25:  0.0980 x 0.0790 OBLONG    -----       9 Flashes
+D29:  0.0100 ROUND  --      36 Draws,       0 Flashes
+D30:  0.0140 ROUND  --       0 Draws,     362 Flashes
+D48:  0.0120 ROUND  --     197 Draws,       0 Flashes
+D52:  0.0790 x 0.0630 OBLONG    -----      48 Flashes
+D53:  0.0430 ROUND  --       0 Draws,      47 Flashes
+D54:  0.0200 ROUND  --      49 Draws,       0 Flashes
+D55:  0.0390 ROUND  --     242 Draws,       0 Flashes
+D56:  0.0350 ROUND  --      35 Draws,       0 Flashes
+D63:  0.0790 x 0.0980 OBLONG    -----       6 Flashes
+---------------------------------------------------------
+ 21 D-Codes      -----     559 Draws,     724 Flashes
+
+*********************************************************
+
+Output file: E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.SOLDER MASK TOP
+
+Aperture totals for E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.SOLDER MASK TOP:
+---------------------------------------------------------
+D18:  0.0200 ROUND  --       0 Draws,       5 Flashes
+D20:  0.1200 ROUND  --       0 Draws,       8 Flashes
+D21:  0.0630 ROUND  --       0 Draws,      52 Flashes
+D22:  0.0630 SQUARE --       0 Draws,       8 Flashes
+D24:  0.0790 ROUND  --       0 Draws,      64 Flashes
+D29:  0.0100 ROUND  --       8 Draws,       0 Flashes
+D31:  0.1100 SQUARE --       0 Draws,       2 Flashes
+D32:  0.1100 ROUND  --       0 Draws,       4 Flashes
+D33:  0.0790 SQUARE --       0 Draws,      10 Flashes
+D36:  0.1020 ROUND  --       0 Draws,       4 Flashes
+D39:  0.1020 x 0.0610 OBLONG    -----      14 Flashes
+D40:  0.0610 x 0.1020 OBLONG    -----       4 Flashes
+D41:  0.0390 ROUND  --       0 Draws,       6 Flashes
+D44:  0.0830 ROUND  --       0 Draws,      71 Flashes
+D57:  0.0830 x 0.0650 OBLONG    -----      48 Flashes
+D58:  0.0450 ROUND  --       0 Draws,      47 Flashes
+D64:  0.1020 x 0.0830 OBLONG    -----       9 Flashes
+D65:  0.0830 x 0.1020 OBLONG    -----       6 Flashes
+---------------------------------------------------------
+ 18 D-Codes      -----       8 Draws,     362 Flashes
+
+*********************************************************
+
+Output file: E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.SOLDER MASK BOTOM
+
+Aperture totals for E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.SOLDER MASK BOTOM:
+---------------------------------------------------------
+D18:  0.0200 ROUND  --       0 Draws,       5 Flashes
+D20:  0.1200 ROUND  --       0 Draws,       8 Flashes
+D21:  0.0630 ROUND  --       0 Draws,      52 Flashes
+D22:  0.0630 SQUARE --       0 Draws,       8 Flashes
+D24:  0.0790 ROUND  --       0 Draws,      64 Flashes
+D29:  0.0100 ROUND  --       8 Draws,       0 Flashes
+D31:  0.1100 SQUARE --       0 Draws,       2 Flashes
+D32:  0.1100 ROUND  --       0 Draws,       4 Flashes
+D33:  0.0790 SQUARE --       0 Draws,      10 Flashes
+D36:  0.1020 ROUND  --       0 Draws,       4 Flashes
+D39:  0.1020 x 0.0610 OBLONG    -----      14 Flashes
+D40:  0.0610 x 0.1020 OBLONG    -----       4 Flashes
+D41:  0.0390 ROUND  --       0 Draws,       6 Flashes
+D44:  0.0830 ROUND  --       0 Draws,      71 Flashes
+D57:  0.0830 x 0.0650 OBLONG    -----      48 Flashes
+D58:  0.0450 ROUND  --       0 Draws,      47 Flashes
+D64:  0.1020 x 0.0830 OBLONG    -----       9 Flashes
+D65:  0.0830 x 0.1020 OBLONG    -----       6 Flashes
+---------------------------------------------------------
+ 18 D-Codes      -----       8 Draws,     362 Flashes
+
+*********************************************************
+
+Output file: E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.SST
+
+Aperture totals for E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.SST:
+---------------------------------------------------------
+D29:  0.0100 ROUND  --    1611 Draws,       0 Flashes
+D47:  0.0160 ROUND  --       9 Draws,       0 Flashes
+D48:  0.0120 ROUND  --    1328 Draws,       0 Flashes
+D49:  0.0080 ROUND  --     422 Draws,       0 Flashes
+D50:  0.0010 ROUND  --      72 Draws,       0 Flashes
+---------------------------------------------------------
+  5 D-Codes      -----    3442 Draws,       0 Flashes
+
+*********************************************************
+
+Output file: E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.DRILL DRAWING
+
+Aperture totals for E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.DRILL DRAWING:
+---------------------------------------------------------
+D29:  0.0100 ROUND  --    2266 Draws,       0 Flashes
+D51:  0.0040 ROUND  --       4 Draws,       0 Flashes
+---------------------------------------------------------
+  2 D-Codes      -----    2270 Draws,       0 Flashes
+
+
+*********************************************************
+
+Aperture totals for entire project:
+---------------------------------------------------------
+D10:  0.0980 SQUARE --       0 Draws,       4 Flashes
+D11:  0.0980 ROUND  --       0 Draws,      16 Flashes
+D12:  0.0750 ROUND  --       0 Draws,     128 Flashes
+D13:  0.0750 SQUARE --       0 Draws,      20 Flashes
+D18:  0.0200 ROUND  --       0 Draws,      20 Flashes
+D19:  0.0980 x 0.0590 OBLONG    -----      28 Flashes
+D20:  0.1200 ROUND  --       0 Draws,      32 Flashes
+D21:  0.0630 ROUND  --       0 Draws,     208 Flashes
+D22:  0.0630 SQUARE --       0 Draws,      32 Flashes
+D23:  0.0590 x 0.0980 OBLONG    -----       8 Flashes
+D24:  0.0790 ROUND  --       0 Draws,     282 Flashes
+D25:  0.0980 x 0.0790 OBLONG    -----      18 Flashes
+D29:  0.0100 ROUND  --    3964 Draws,       0 Flashes
+D30:  0.0140 ROUND  --       0 Draws,     724 Flashes
+D31:  0.1100 SQUARE --       0 Draws,       4 Flashes
+D32:  0.1100 ROUND  --       0 Draws,       8 Flashes
+D33:  0.0790 SQUARE --       0 Draws,      20 Flashes
+D36:  0.1020 ROUND  --       0 Draws,       8 Flashes
+D39:  0.1020 x 0.0610 OBLONG    -----      28 Flashes
+D40:  0.0610 x 0.1020 OBLONG    -----       8 Flashes
+D41:  0.0390 ROUND  --       0 Draws,      12 Flashes
+D44:  0.0830 ROUND  --       0 Draws,     142 Flashes
+D47:  0.0160 ROUND  --       9 Draws,       0 Flashes
+D48:  0.0120 ROUND  --    1816 Draws,       0 Flashes
+D49:  0.0080 ROUND  --     422 Draws,       0 Flashes
+D50:  0.0010 ROUND  --      72 Draws,       0 Flashes
+D51:  0.0040 ROUND  --       4 Draws,       0 Flashes
+D52:  0.0790 x 0.0630 OBLONG    -----      96 Flashes
+D53:  0.0430 ROUND  --       0 Draws,      94 Flashes
+D54:  0.0200 ROUND  --     101 Draws,       0 Flashes
+D55:  0.0390 ROUND  --     418 Draws,       0 Flashes
+D56:  0.0350 ROUND  --      48 Draws,       0 Flashes
+D57:  0.0830 x 0.0650 OBLONG    -----      96 Flashes
+D58:  0.0450 ROUND  --       0 Draws,      94 Flashes
+D63:  0.0790 x 0.0980 OBLONG    -----      12 Flashes
+D64:  0.1020 x 0.0830 OBLONG    -----      18 Flashes
+D65:  0.0830 x 0.1020 OBLONG    -----      12 Flashes
+---------------------------------------------------------
+ 37 D-Codes      -----    6854 Draws,    2172 Flashes
+
+
+No warnings or errors.

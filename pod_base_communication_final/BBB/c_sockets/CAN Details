@@ -1,0 +1,14 @@
+After running ./can.sh which sets the BBB up for CAN bus comms at 1Mbps.
+
+Connect a node(teensy) emitting data continuously and receiving data
+
+The following CLI commands will work
+
+"candump -cae can0,0:0,#FFFFFFFF" - listens to the canbus and prints the data out
+
+"cansend can0 001#00112233" - Sends the 8 -byte data onto the can bus
+
+
+For Msg Queue check this link: (Tested)
+
+http://semanchuk.com/philip/sysv_ipc/

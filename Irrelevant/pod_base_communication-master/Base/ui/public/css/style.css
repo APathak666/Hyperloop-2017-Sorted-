@@ -1,0 +1,523 @@
+/*================================
+    BODY STYLES & OVERLAY 
+=================================*/
+*:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  color: #666;
+  /*-webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;*/
+  background-color: #000;
+  padding-left: 300px; }
+  body:before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: -webkit-radial-gradient(top left, circle, #fff, transparent);
+    background-image: radial-gradient(circle at top left, #fff, transparent);
+    opacity: 0.12;
+    z-index: -1; }
+
+@media only screen and (max-width: 992px) {
+  body {
+    padding-left: 0; } }
+
+.overlay {
+  pointer-events: none; }
+  .overlay:before, .overlay:after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; }
+  .overlay:before {
+    background-image: -webkit-radial-gradient(top left, circle, #25fabb, transparent);
+    background-image: radial-gradient(circle at top left, #25fabb, transparent);
+    opacity: 0.04; }
+  .overlay:after {
+    background-image: -webkit-radial-gradient(bottom right, circle, #874bd7, transparent);
+    background-image: radial-gradient(circle at bottom right, #874bd7, transparent);
+    opacity: 0.2; }
+
+/*================================
+            LAYOUTS
+=================================*/
+/*================================
+        SIDEBAR LAYOUTS
+=================================*/
+.sidebar {
+  background-color: rgba(22, 22, 22, 0.8);
+  /*================================
+            HEALTH CHECK
+    =================================*/ }
+  .sidebar .card-panel,
+  .sidebar .card {
+    background-color: rgba(120, 120, 120, 0.07); }
+  .sidebar .collapsible .collapsible-header {
+    padding: 0; }
+    .sidebar .collapsible .collapsible-header:hover {
+      background-color: initial;
+      cursor: initial; }
+  .sidebar .collapsible .collapsible li, .sidebar .collapsible .collapsible-body {
+    line-height: initial;
+    background-color: initial; }
+  .sidebar .branding img {
+    width: 100%;
+    max-width: 200px; }
+  .sidebar .health .collapsible {
+    margin-top: 30px; }
+  .sidebar .health-display .check-item {
+    font-size: 12px;
+    margin: 10px 0; }
+    .sidebar .health-display .check-item .check-item-name {
+      padding-left: 10px; }
+    .sidebar .health-display .check-item .status {
+      vertical-align: middle; }
+  .sidebar .controls h6 {
+    font-size: 1.5rem;
+    padding-top: 1rem; }
+  .sidebar .controls .switch label {
+    font-size: 1rem; }
+  .sidebar .communication h6:after {
+    content: "";
+    position: absolute;
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 10px;
+    margin-left: 10px;
+    background-color: crimson; }
+  .sidebar .vitals .pusher {
+    font-size: 12px;
+    position: relative; }
+    .sidebar .vitals .pusher:after {
+      top: 3px;
+      content: "";
+      position: absolute;
+      width: 0.6rem;
+      height: 0.6rem;
+      border-radius: 10px;
+      margin-left: 10px; }
+  .sidebar .vitals .engage:after {
+    background-color: green; }
+  .sidebar .vitals .disengage:after {
+    background-color: crimson; }
+  .sidebar .console .display {
+    background-color: #000;
+    padding: 30px 5px;
+    color: white;
+    font-family: monospace;
+    font-size: 10px; }
+
+#left-sidebar {
+  width: 300px;
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+  overflow: hidden; }
+  #left-sidebar:hover {
+    overflow-y: auto; }
+
+.gauge-container {
+  width: 100px;
+  left: 50%;
+  margin: auto; }
+
+.pusher-detachment h6:after {
+  content: "";
+  position: absolute;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 10px;
+  margin-left: 10px;
+  background-color: crimson; }
+
+/*================================
+      MAIN DASH BOARD LAYOUTS
+=================================*/
+.main-dash .top-center-bar {
+  background-color: rgba(22, 22, 22, 0.8); }
+  .main-dash .top-center-bar .card-panel,
+  .main-dash .top-center-bar .card {
+    background-color: rgba(120, 120, 120, 0.07); }
+
+.main-dash #velocity, .main-dash #acceleration {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.main-dash .ypr {
+  padding-left: calc(50% - 150px); }
+
+.main-dash .levitation, .main-dash .brakes {
+  text-align: center;
+  vertical-align: middle; }
+  .main-dash .levitation svg, .main-dash .brakes svg {
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  .main-dash .levitation p, .main-dash .brakes p {
+    font-size: 1.2rem;
+    margin-top: 20px; }
+  .main-dash .levitation span.value, .main-dash .brakes span.value {
+    color: #fff;
+    font-size: 1.6rem; }
+  .main-dash .levitation span.unit, .main-dash .brakes span.unit {
+    color: #aaa;
+    margin-right: 15px; }
+  .main-dash .levitation span.dotted-box, .main-dash .brakes span.dotted-box {
+    border: dotted 1px #eee;
+    color: #eee;
+    padding: 5px;
+    margin-right: 5px; }
+
+.main-dash .brakes p {
+  margin-top: 4rem; }
+
+.main-dash .levitation img {
+  width: 90%; }
+
+.main-dash .foot {
+  padding: 3rem;
+  margin-top: 5rem; }
+
+/*================================
+        SPEED GAUGE SYLES
+=================================*/
+.speedometer-container {
+  width: 25rem;
+  height: 18rem;
+  position: relative; }
+
+.speedometer .inner-ring {
+  width: 10rem;
+  height: 10rem;
+  position: absolute;
+  top: calc(50% - 1.5rem);
+  left: calc(50% - 5rem); }
+  .speedometer .inner-ring:before, .speedometer .inner-ring:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid transparent;
+    border-top: 2px solid #3b3d45;
+    border-right: 2px solid #3b3d45;
+    border-radius: 50%; }
+  .speedometer .inner-ring:before {
+    -webkit-transform: rotate(-75deg);
+    transform: rotate(-75deg); }
+  .speedometer .inner-ring:after {
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg); }
+
+.speedometer .outer-ring {
+  width: 20rem;
+  height: 18rem;
+  position: absolute;
+  top: calc(50% - 6rem);
+  left: calc(50% - 10rem);
+  border-radius: 50%; }
+
+.speedometer .digit-ring {
+  position: absolute;
+  top: calc(50% + 3.5rem);
+  left: 50%; }
+
+.speedometer .tick {
+  width: 0.8rem;
+  border-top: 2px solid #3b3d45;
+  position: absolute;
+  top: calc(50% - 0.1rem);
+  left: calc(50% - 0.4rem); }
+  .speedometer .tick:nth-child(6n+1) {
+    width: 1.6rem;
+    left: calc(50% - 0.8rem);
+    border-color: #787a81; }
+
+.speedometer .digit {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: calc(50% - 1rem);
+  left: calc(50% - 1rem);
+  font-weight: bold;
+  text-align: center;
+  line-height: 2rem; }
+
+.speedometer .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 21rem;
+  height: 18rem;
+  position: absolute;
+  padding-top: calc(13.8rem - 1rem - 3rem - 1.4rem);
+  top: 0;
+  left: calc(50% - 10.5rem); }
+
+.speedometer .label {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.speedometer .speed {
+  margin: 0;
+  font-size: 3rem;
+  color: #fff; }
+
+.speedometer .unit {
+  margin: 0;
+  font-size: 1.4rem; }
+
+.speedometer .guage-progress {
+  width: 10rem;
+  height: 10rem;
+  position: absolute;
+  top: calc(50% - 1.5rem);
+  left: calc(50% - 5rem);
+  border-radius: 50%; }
+  .speedometer .guage-progress:before {
+    content: "";
+    position: absolute;
+    top: -0.2rem;
+    left: calc(50% - 0.3rem);
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    background-color: #f1252e;
+    box-shadow: 0 0 6rem 2rem rgba(241, 37, 46, 0.35); }
+
+/*================================
+      POSITION INDICATOR SYLES
+=================================*/
+.position-indicator-container {
+  width: 25rem;
+  height: 18rem;
+  position: relative; }
+
+.position-indicator .outer-ring {
+  width: 20rem;
+  height: 18rem;
+  position: absolute;
+  top: calc(50% - 6rem);
+  left: calc(50% - 10rem);
+  border-radius: 50%; }
+
+.position-indicator .digit-ring {
+  position: absolute;
+  top: calc(50% + 3.5rem);
+  left: 50%; }
+
+.position-indicator .tick {
+  width: 1.6rem;
+  border-top: 2px solid #3b3d45;
+  position: absolute;
+  top: calc(50% - 0.1rem);
+  left: calc(50% - 0.8rem); }
+
+.position-indicator .digit {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: calc(50% - 1rem);
+  left: calc(50% - 1rem);
+  font-weight: bold;
+  text-align: center;
+  line-height: 2rem; }
+
+.position-indicator .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 21rem;
+  height: 18rem;
+  position: absolute;
+  padding-top: calc(13.8rem - 1.5rem - 1.4rem - 1rem - 3rem - 1.4rem);
+  top: 0;
+  left: calc(50% - 10.5rem); }
+
+.position-indicator .count-label {
+  font-size: 1.4rem;
+  text-transform: uppercase; }
+  .position-indicator .count-label .count {
+    color: #fff;
+    font-size: 1.5rem; }
+
+.position-indicator .label {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.position-indicator .value {
+  margin: 0;
+  font-size: 3rem;
+  color: #fff; }
+
+.position-indicator .unit {
+  margin: 0;
+  font-size: 1.4rem; }
+
+.position-indicator .guage-progress {
+  width: 10rem;
+  height: 10rem;
+  position: absolute;
+  top: calc(50% - 1.5rem);
+  left: calc(50% - 5rem);
+  border-radius: 50%; }
+  .position-indicator .guage-progress:before {
+    content: "";
+    position: absolute;
+    top: -0.2rem;
+    left: calc(50% - 0.3rem);
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    background-color: #f1252e;
+    box-shadow: 0 0 6rem 2rem rgba(241, 37, 46, 0.35); }
+
+/*================================
+        BATTERY SYLES
+=================================*/
+.battery-container {
+  clear: both;
+  padding-top: 10px;
+  padding-right: 40px; }
+  .battery-container .battery {
+    display: inline-block;
+    width: 2.2rem;
+    background-color: transparent;
+    box-sizing: border-box;
+    border: .2em #505050 solid;
+    margin-top: 1em;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    padding-bottom: 0.2rem; }
+    .battery-container .battery:before {
+      content: "";
+      height: .3em;
+      width: 1em;
+      background-color: #505050;
+      position: absolute;
+      margin-top: -.5em;
+      margin-left: .3em; }
+    .battery-container .battery .bar {
+      height: 0.75rem;
+      width: 100%;
+      background-color: #19ad38;
+      margin-top: 2px; }
+  .battery-container .battery-info > h5 {
+    display: inline-block; }
+
+/*================================
+           GAUGE STYLES
+=================================*/
+.gauge-container {
+  width: 10rem;
+  height: 10rem;
+  display: inline-block;
+  padding: 10px; }
+
+.gauge-container > .gauge > .dial {
+  stroke: #334455;
+  stroke-width: 80;
+  fill: transparent; }
+
+.gauge-container > .gauge > .value {
+  stroke: #F8774B;
+  stroke-width: 80;
+  fill: transparent; }
+
+.gauge-container > .gauge > .value-text {
+  fill: #F8774B;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 15em; }
+
+/*================================
+     TOGGLE BUTTON STYLES
+=================================*/
+.switch {
+  float: right; }
+  .switch input[type=checkbox]:checked + .lever {
+    background-color: #36903a; }
+  .switch:not(.checked) span.off {
+    color: #F44336; }
+  .switch.checked span.on {
+    color: #4CAF50; }
+
+/*================================
+        RANGE SLIDER STYLES
+=================================*/
+.range-container .range {
+  width: calc(90%);
+  position: relative;
+  margin: 10px;
+  border: 0;
+  height: 3px;
+  background: #37474F;
+  outline: none; }
+  .range-container .range .ui-slider-handle {
+    position: absolute;
+    margin: -4px 0 0 -9px;
+    border-radius: 100%;
+    background: #9f9f9f;
+    border: 0;
+    height: 12px;
+    width: 12px;
+    outline: none;
+    cursor: pointer; }
+  .range-container .range input.range-value {
+    right: 10px;
+    top: -25px;
+    max-width: 30px;
+    position: absolute;
+    font-size: 13px;
+    font-weight: bold;
+    color: #9f9f9f;
+    text-align: right;
+    box-shadow: none;
+    border: none;
+    border-bottom: 1px dotted #9f9f9f;
+    background: transparent;
+    outline: none; }

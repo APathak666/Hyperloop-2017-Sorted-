@@ -1,0 +1,5 @@
+1. Setup vcan0 by running setup.sh
+2. Run the test bench file (can_network_tb.cpp) trying to mimic the CAN Network 
+3. Run the node server in ../Base/server_c_socket.js
+4. Run comm_node.cpp (compile with the tag "-pthread")
+5. Open http://localhost:8081/index.html for displaying the data and sending commands

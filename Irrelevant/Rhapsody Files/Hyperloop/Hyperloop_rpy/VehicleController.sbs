@@ -1,0 +1,1546 @@
+I-Logix-RPY-Archive version 8.13.0 C++ 9794446
+{ ISubsystem 
+	- _id = GUID efb75952-3910-4867-99ef-1f86394d7b47;
+	- _myState = 8192;
+	- _name = "VehicleController";
+	- _modifiedTimeWeak = 2.15.2017::4:47:41;
+	- _theMainDiagram = { IHandle 
+		- _m2Class = "IDiagram";
+		- _filename = "";
+		- _subsystem = "";
+		- _class = "";
+		- _name = "LogicalView";
+		- _id = GUID 64182b97-ecdb-4e84-9603-d0436d63f6cc;
+	}
+	- _lastID = 24;
+	- Declaratives = { IRPYRawContainer 
+		- size = 5;
+		- value = 
+		{ IDiagram 
+			- _id = GUID 178ca88e-3284-4925-8ab0-4fc5bef6a4d8;
+			- _myState = 8192;
+			- _name = "PackageOverview";
+			- _modifiedTimeWeak = 1.2.1990::0:0:0;
+			- _lastModifiedTime = "2.13.2017::16:4:11";
+			- _graphicChart = { CGIClassChart 
+				- _id = GUID e5e1df6e-1e97-44c3-9a95-98f62f7d820a;
+				- m_type = 0;
+				- m_pModelObject = { IHandle 
+					- _m2Class = "IDiagram";
+					- _id = GUID 178ca88e-3284-4925-8ab0-4fc5bef6a4d8;
+				}
+				- m_pParent = ;
+				- m_name = { CGIText 
+					- m_str = "";
+					- m_style = "Arial" 10 0 0 0 1 ;
+					- m_color = { IColor 
+						- m_fgColor = 0;
+						- m_bgColor = 0;
+						- m_bgFlag = 0;
+					}
+					- m_position = 1 0 0  ;
+					- m_nIdent = 0;
+					- m_bImplicitSetRectPoints = 0;
+					- m_nOrientationCtrlPt = 8;
+				}
+				- m_drawBehavior = 0;
+				- m_bIsPreferencesInitialized = 0;
+				- elementList = 1;
+				{ CGIClass 
+					- _id = GUID 4422beb7-8d24-45bb-9e46-8f3bf0f0907d;
+					- m_type = 78;
+					- m_pModelObject = { IHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 3cbd158b-4735-4092-89ac-d8bb759299da;
+					}
+					- m_pParent = ;
+					- m_name = { CGIText 
+						- m_str = "TopLevel";
+						- m_style = "Arial" 10 0 0 0 1 ;
+						- m_color = { IColor 
+							- m_fgColor = 0;
+							- m_bgColor = 0;
+							- m_bgFlag = 0;
+						}
+						- m_position = 1 0 0  ;
+						- m_nIdent = 0;
+						- m_bImplicitSetRectPoints = 0;
+						- m_nOrientationCtrlPt = 5;
+					}
+					- m_drawBehavior = 0;
+					- m_bIsPreferencesInitialized = 0;
+					- m_AdditionalLabel = { CGIText 
+						- m_str = "";
+						- m_style = "Arial" 10 0 0 0 1 ;
+						- m_color = { IColor 
+							- m_fgColor = 0;
+							- m_bgColor = 0;
+							- m_bgFlag = 0;
+						}
+						- m_position = 1 0 0  ;
+						- m_nIdent = 0;
+						- m_bImplicitSetRectPoints = 0;
+						- m_nOrientationCtrlPt = 1;
+					}
+					- m_polygon = 0 ;
+					- m_nNameFormat = 0;
+					- m_nIsNameFormat = 0;
+					- Compartments = { IRPYRawContainer 
+						- size = 2;
+						- value = 
+						{ CGICompartment 
+							- _id = GUID 0afa8b4b-d658-42e3-b5da-c6ad6f532f01;
+							- m_name = "Attribute";
+							- m_displayOption = Explicit;
+							- m_bShowInherited = 0;
+							- m_bOrdered = 0;
+							- Items = { IRPYRawContainer 
+								- size = 0;
+							}
+						}
+						{ CGICompartment 
+							- _id = GUID c4023c1a-207b-4adc-93c1-d9031ac3bf9a;
+							- m_name = "Operation";
+							- m_displayOption = Explicit;
+							- m_bShowInherited = 0;
+							- m_bOrdered = 0;
+							- Items = { IRPYRawContainer 
+								- size = 0;
+							}
+						}
+					}
+					- Attrs = { IRPYRawContainer 
+						- size = 0;
+					}
+					- Operations = { IRPYRawContainer 
+						- size = 0;
+					}
+				}
+				
+				- m_access = 'Z';
+				- m_modified = 'N';
+				- m_fileVersion = "";
+				- m_nModifyDate = 0;
+				- m_nCreateDate = 0;
+				- m_creator = "";
+				- m_bScaleWithZoom = 1;
+				- m_arrowStyle = 'S';
+				- m_pRoot = GUID 4422beb7-8d24-45bb-9e46-8f3bf0f0907d;
+				- m_currentLeftTop = 0 0 ;
+				- m_currentRightBottom = 0 0 ;
+				- m_bFreezeCompartmentContent = 0;
+			}
+			- _defaultSubsystem = { IHandle 
+				- _m2Class = "ISubsystem";
+				- _id = GUID efb75952-3910-4867-99ef-1f86394d7b47;
+			}
+		}
+		{ INode 
+			- _id = GUID cf1aa7de-4904-4402-8e53-57ee40c38d4b;
+			- _name = "Teensy36";
+			- _modifiedTimeWeak = 2.14.2017::16:52:28;
+		}
+		{ IInformationFlow 
+			- _id = GUID 33b9a4bd-1fc9-44ee-80a5-dfc97ece6b6d;
+			- _myState = 2048;
+			- _name = "Teensy36_Teensy36";
+			- _modifiedTimeWeak = 1.2.1990::0:0:0;
+			- Conveyed = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IInformationItem";
+					- _id = GUID 22d6911d-081f-4f6b-9841-9f39ed6d5642;
+				}
+			}
+			- end1_ = { IHandle 
+				- _m2Class = "INode";
+				- _id = GUID cf1aa7de-4904-4402-8e53-57ee40c38d4b;
+			}
+			- end2_ = { IHandle 
+				- _m2Class = "INode";
+				- _filename = "Navigation.sbs";
+				- _subsystem = "Navigation";
+				- _class = "";
+				- _name = "Teensy36";
+				- _id = GUID 6d3ed68c-db7a-4f30-b81f-faebde43f755;
+			}
+			- direction_ = toEnd2;
+		}
+		{ IInformationItem 
+			- _id = GUID 22d6911d-081f-4f6b-9841-9f39ed6d5642;
+			- _myState = 8192;
+			- _name = "CAN";
+			- _modifiedTimeWeak = 1.2.1990::0:0:0;
+		}
+		{ IStereotype 
+			- _id = GUID 9158e4f0-6ee6-4395-80df-492f9001611b;
+			- _myState = 8192;
+			- _name = "Process";
+			- _modifiedTimeWeak = 2.15.2017::2:57:1;
+			- _m2Classes = { IRPYRawContainer 
+				- size = 1;
+				- value = "Class"; 
+			}
+		}
+	}
+	- weakCGTime = 2.15.2017::4:47:41;
+	- strongCGTime = 2.14.2017::16:52:28;
+	- _defaultComposite = GUID 3cbd158b-4735-4092-89ac-d8bb759299da;
+	- _eventsBaseID = -1;
+	- Classes = { IRPYRawContainer 
+		- size = 21;
+		- value = 
+		{ IClass 
+			- _id = GUID 3cbd158b-4735-4092-89ac-d8bb759299da;
+			- _myState = 40960;
+			- _name = "TopLevel";
+			- _modifiedTimeWeak = 2.14.2017::16:56:49;
+			- weakCGTime = 2.14.2017::16:56:49;
+			- strongCGTime = 2.14.2017::16:52:28;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID b5d4b366-8d75-4131-b01c-d19546420543;
+			- _myState = 8192;
+			- _name = "BrakingActuation";
+			- _modifiedTimeWeak = 2.13.2017::16:5:18;
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "LogicalView";
+				- _id = GUID 64182b97-ecdb-4e84-9603-d0436d63f6cc;
+			}
+			- weakCGTime = 2.13.2017::16:5:18;
+			- strongCGTime = 2.13.2017::16:5:18;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 07097100-0406-4ca0-b02b-19083692ac2c;
+			- _myState = 8192;
+			- _name = "LevitationActuation";
+			- _modifiedTimeWeak = 2.13.2017::16:4:56;
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "LogicalView";
+				- _id = GUID 64182b97-ecdb-4e84-9603-d0436d63f6cc;
+			}
+			- weakCGTime = 2.13.2017::16:4:56;
+			- strongCGTime = 2.13.2017::16:0:6;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID a870c4f0-79d7-45fa-90e2-e77864c54cd6;
+			- _myState = 8192;
+			- _name = "LowSpeedDrive";
+			- Stereotypes = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IStereotype";
+					- _id = GUID 9158e4f0-6ee6-4395-80df-492f9001611b;
+				}
+			}
+			- _modifiedTimeWeak = 2.15.2017::3:7:35;
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "LogicalView";
+				- _id = GUID 64182b97-ecdb-4e84-9603-d0436d63f6cc;
+			}
+			- weakCGTime = 2.15.2017::3:7:35;
+			- strongCGTime = 2.15.2017::3:7:35;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID de2ff1dc-43b5-4746-abd0-b6e35fbda78a;
+			- _myState = 8192;
+			- _name = "SensorInput";
+			- _modifiedTimeWeak = 2.13.2017::16:5:34;
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "LogicalView";
+				- _id = GUID 64182b97-ecdb-4e84-9603-d0436d63f6cc;
+			}
+			- weakCGTime = 2.13.2017::16:5:34;
+			- strongCGTime = 2.13.2017::16:3:21;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID b65e6a4c-37f0-4362-aac7-885a6117d64e;
+			- _myState = 8192;
+			- _name = "BrakingInitiator";
+			- Stereotypes = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IStereotype";
+					- _id = GUID 9158e4f0-6ee6-4395-80df-492f9001611b;
+				}
+			}
+			- _modifiedTimeWeak = 2.15.2017::4:47:17;
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "DesignArch.sbs";
+				- _subsystem = "DesignArch";
+				- _class = "";
+				- _name = "ProcessView";
+				- _id = GUID 953016d2-f507-437b-8d2c-3c9d7c2eb126;
+			}
+			- _lastID = 2;
+			- weakCGTime = 2.15.2017::4:47:17;
+			- strongCGTime = 2.15.2017::2:56:55;
+			- Ports = { IRPYRawContainer 
+				- size = 2;
+				- value = 
+				{ IPort 
+					- _id = GUID 51458a61-c316-4f98-b9dc-e5b612fbaf5c;
+					- _myState = 8192;
+					- _name = "BrakingInitiatorReuiredPort";
+					- _modifiedTimeWeak = 2.15.2017::4:46:59;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 9b3e2e2e-b521-404c-8c8c-65e745287078;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _implicitClass = { IClass 
+						- _id = GUID 9b3e2e2e-b521-404c-8c8c-65e745287078;
+						- _myState = 10240;
+						- _name = "BrakingInitiatorReuiredPort_implicitContract";
+						- Dependencies = { IRPYRawContainer 
+							- size = 2;
+							- value = 
+							{ IDependency 
+								- _id = GUID 390ed8e3-0070-4a0b-b25f-58e161574548;
+								- _myState = 2048;
+								- _name = "BrakeTimeCompute_BrakingInitiatorInterface";
+								- Stereotypes = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IHandle 
+										- _m2Class = "IStereotype";
+										- _filename = "PredefinedTypes.sbs";
+										- _subsystem = "PredefinedTypes";
+										- _class = "";
+										- _name = "Usage";
+										- _id = GUID 42aa4325-6112-4e88-87ce-66008878f1db;
+									}
+								}
+								- _modifiedTimeWeak = 2.15.2017::4:31:6;
+								- _dependsOn = { INObjectHandle 
+									- _m2Class = "IClass";
+									- _filename = "Navigation.sbs";
+									- _subsystem = "Navigation";
+									- _class = "";
+									- _name = "BrakeTimeCompute_BrakingInitiatorInterface";
+									- _id = GUID b611971d-b2d6-40c0-bbd7-121bb70506f9;
+								}
+							}
+							{ IDependency 
+								- _id = GUID 4a47309e-c5a9-4a12-bfc2-22fa64248525;
+								- _myState = 2048;
+								- _name = "TCPSocket_BrakingInitiatorInterface";
+								- Stereotypes = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IHandle 
+										- _m2Class = "IStereotype";
+										- _filename = "PredefinedTypes.sbs";
+										- _subsystem = "PredefinedTypes";
+										- _class = "";
+										- _name = "Usage";
+										- _id = GUID 42aa4325-6112-4e88-87ce-66008878f1db;
+									}
+								}
+								- _modifiedTimeWeak = 2.15.2017::4:47:17;
+								- _dependsOn = { INObjectHandle 
+									- _m2Class = "IClass";
+									- _id = GUID 8ec9c940-0d9e-49bf-950c-ce7701dda5ef;
+								}
+							}
+						}
+						- Stereotypes = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IHandle 
+								- _m2Class = "IStereotype";
+								- _filename = "PredefinedTypes.sbs";
+								- _subsystem = "PredefinedTypes";
+								- _class = "";
+								- _name = "Interface";
+								- _id = GUID 2a7b8a63-f54f-4379-bab0-02800a5084e1;
+							}
+						}
+						- _modifiedTimeWeak = 2.15.2017::4:47:17;
+						- weakCGTime = 2.15.2017::4:47:17;
+						- strongCGTime = 2.15.2017::4:30:59;
+						- _multiplicity = "";
+						- _itsStateChart = { IHandle 
+							- _m2Class = "";
+						}
+						- _classModifier = Unspecified;
+					}
+				}
+				{ IPort 
+					- _id = GUID a12ee35a-27d5-49d6-8971-db982c9f94d8;
+					- _myState = 8192;
+					- _name = "BrakingInitiatorProvidedPort";
+					- _modifiedTimeWeak = 2.15.2017::4:36:48;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 034f4189-f440-4bcf-b2a7-a3855a5f45ff;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _implicitClass = { IClass 
+						- _id = GUID 034f4189-f440-4bcf-b2a7-a3855a5f45ff;
+						- _myState = 10240;
+						- _name = "BrakingInitiatorProvidedPort_implicitContract";
+						- Stereotypes = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IHandle 
+								- _m2Class = "IStereotype";
+								- _filename = "PredefinedTypes.sbs";
+								- _subsystem = "PredefinedTypes";
+								- _class = "";
+								- _name = "Interface";
+								- _id = GUID 2a7b8a63-f54f-4379-bab0-02800a5084e1;
+							}
+						}
+						- _modifiedTimeWeak = 2.15.2017::4:36:48;
+						- weakCGTime = 2.15.2017::4:36:48;
+						- strongCGTime = 2.15.2017::4:36:48;
+						- Inheritances = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IGeneralization 
+								- _id = GUID e6b4f932-0a65-4d63-ba2f-4a35f160996e;
+								- _modifiedTimeWeak = 1.2.1990::0:0:0;
+								- _dependsOn = { INObjectHandle 
+									- _m2Class = "IClass";
+									- _id = GUID af5bff9b-3ae2-470a-9c49-b59d2e759728;
+								}
+								- _inheritanceType = iPublic;
+								- _isVirtual = 0;
+							}
+						}
+						- _multiplicity = "";
+						- _itsStateChart = { IHandle 
+							- _m2Class = "";
+						}
+						- _classModifier = Unspecified;
+					}
+				}
+			}
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID c52270d5-e75d-47c9-8e5f-9eb7ad8a99c0;
+			- _myState = 8192;
+			- _name = "LevitationInitiator";
+			- Stereotypes = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IStereotype";
+					- _id = GUID 9158e4f0-6ee6-4395-80df-492f9001611b;
+				}
+			}
+			- _modifiedTimeWeak = 2.15.2017::4:48:5;
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "DesignArch.sbs";
+				- _subsystem = "DesignArch";
+				- _class = "";
+				- _name = "ProcessView";
+				- _id = GUID 953016d2-f507-437b-8d2c-3c9d7c2eb126;
+			}
+			- _lastID = 2;
+			- weakCGTime = 2.15.2017::4:48:5;
+			- strongCGTime = 2.15.2017::2:57:54;
+			- Ports = { IRPYRawContainer 
+				- size = 2;
+				- value = 
+				{ IPort 
+					- _id = GUID 7e6c08dd-76b7-4123-af79-39fcb3d72be9;
+					- _myState = 8192;
+					- _name = "LevitationInitiatorRequiredPort";
+					- _modifiedTimeWeak = 2.15.2017::4:47:41;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID c4bd1e6d-3b08-4387-961c-17bf515ef416;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _implicitClass = { IClass 
+						- _id = GUID c4bd1e6d-3b08-4387-961c-17bf515ef416;
+						- _myState = 10240;
+						- _name = "LevitationInitiatorRequiredPort_implicitContract";
+						- Dependencies = { IRPYRawContainer 
+							- size = 2;
+							- value = 
+							{ IDependency 
+								- _id = GUID 55d72ac9-1cce-4a75-9c01-f51818c4ac06;
+								- _myState = 2048;
+								- _name = "LevitationTimeCompute_LevitationInitiatorInterface";
+								- Stereotypes = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IHandle 
+										- _m2Class = "IStereotype";
+										- _filename = "PredefinedTypes.sbs";
+										- _subsystem = "PredefinedTypes";
+										- _class = "";
+										- _name = "Usage";
+										- _id = GUID 42aa4325-6112-4e88-87ce-66008878f1db;
+									}
+								}
+								- _modifiedTimeWeak = 2.15.2017::4:32:0;
+								- _dependsOn = { INObjectHandle 
+									- _m2Class = "IClass";
+									- _filename = "Navigation.sbs";
+									- _subsystem = "Navigation";
+									- _class = "";
+									- _name = "LevitationTimeCompute_LevitationInitiatorInterface";
+									- _id = GUID 2a67700e-c538-4650-9e93-cced4eead65e;
+								}
+							}
+							{ IDependency 
+								- _id = GUID ea0cd485-b7d9-4b10-9c16-94865d6c4c2c;
+								- _myState = 2048;
+								- _name = "TCPSocket_LevitationModuleInterface";
+								- Stereotypes = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IHandle 
+										- _m2Class = "IStereotype";
+										- _filename = "PredefinedTypes.sbs";
+										- _subsystem = "PredefinedTypes";
+										- _class = "";
+										- _name = "Usage";
+										- _id = GUID 42aa4325-6112-4e88-87ce-66008878f1db;
+									}
+								}
+								- _modifiedTimeWeak = 2.15.2017::4:48:5;
+								- _dependsOn = { INObjectHandle 
+									- _m2Class = "IClass";
+									- _id = GUID 6b8a976c-2bfd-477c-8c02-00589a93b250;
+								}
+							}
+						}
+						- Stereotypes = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IHandle 
+								- _m2Class = "IStereotype";
+								- _filename = "PredefinedTypes.sbs";
+								- _subsystem = "PredefinedTypes";
+								- _class = "";
+								- _name = "Interface";
+								- _id = GUID 2a7b8a63-f54f-4379-bab0-02800a5084e1;
+							}
+						}
+						- _modifiedTimeWeak = 2.15.2017::4:48:5;
+						- weakCGTime = 2.15.2017::4:48:5;
+						- strongCGTime = 2.15.2017::4:31:48;
+						- _multiplicity = "";
+						- _itsStateChart = { IHandle 
+							- _m2Class = "";
+						}
+						- _classModifier = Unspecified;
+					}
+				}
+				{ IPort 
+					- _id = GUID 2adeed40-1c48-4f0f-b09a-bfec5399c59e;
+					- _myState = 8192;
+					- _name = "LevitationInitiatorProvidedPort";
+					- _modifiedTimeWeak = 2.15.2017::4:33:42;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 83b74f3e-2cbf-422b-9ad0-1326f3a1e670;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _implicitClass = { IClass 
+						- _id = GUID 83b74f3e-2cbf-422b-9ad0-1326f3a1e670;
+						- _myState = 10240;
+						- _name = "LevitationInitiatorProvidedPort_implicitContract";
+						- Stereotypes = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IHandle 
+								- _m2Class = "IStereotype";
+								- _filename = "PredefinedTypes.sbs";
+								- _subsystem = "PredefinedTypes";
+								- _class = "";
+								- _name = "Interface";
+								- _id = GUID 2a7b8a63-f54f-4379-bab0-02800a5084e1;
+							}
+						}
+						- _modifiedTimeWeak = 2.15.2017::4:34:5;
+						- weakCGTime = 2.15.2017::4:34:5;
+						- strongCGTime = 2.15.2017::4:33:33;
+						- Inheritances = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IGeneralization 
+								- _id = GUID 92eca1d8-d460-4971-b5b1-239d925a9c03;
+								- _modifiedTimeWeak = 1.2.1990::0:0:0;
+								- _dependsOn = { INObjectHandle 
+									- _m2Class = "IClass";
+									- _id = GUID aaaf1f0d-f006-48ce-bbe3-c897643be2c9;
+								}
+								- _inheritanceType = iPublic;
+								- _isVirtual = 0;
+							}
+						}
+						- _multiplicity = "";
+						- _itsStateChart = { IHandle 
+							- _m2Class = "";
+						}
+						- _classModifier = Unspecified;
+					}
+				}
+			}
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 599a52f0-d5f1-48b8-8abc-d5e760768d26;
+			- _myState = 8192;
+			- _name = "BrakeController";
+			- Stereotypes = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IStereotype";
+					- _id = GUID 9158e4f0-6ee6-4395-80df-492f9001611b;
+				}
+			}
+			- _modifiedTimeWeak = 2.15.2017::4:39:57;
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "DesignArch.sbs";
+				- _subsystem = "DesignArch";
+				- _class = "";
+				- _name = "ProcessView";
+				- _id = GUID 953016d2-f507-437b-8d2c-3c9d7c2eb126;
+			}
+			- _lastID = 2;
+			- weakCGTime = 2.15.2017::4:39:57;
+			- strongCGTime = 2.15.2017::3:1:8;
+			- Ports = { IRPYRawContainer 
+				- size = 2;
+				- value = 
+				{ IPort 
+					- _id = GUID 071ae36b-9690-4755-b82c-625f6b78a910;
+					- _myState = 8192;
+					- _name = "BrakeControllerRequiredPort";
+					- _modifiedTimeWeak = 2.15.2017::4:37:59;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID c3ad7db3-0ed7-4811-a03e-224a029aaec3;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _implicitClass = { IClass 
+						- _id = GUID c3ad7db3-0ed7-4811-a03e-224a029aaec3;
+						- _myState = 10240;
+						- _name = "BrakeControllerRequiredPort_implicitContract";
+						- Dependencies = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IDependency 
+								- _id = GUID b937acb7-7b66-45a4-985d-1d4c114fab04;
+								- _myState = 2048;
+								- _name = "BrakingInitiator_ControllerInterface";
+								- Stereotypes = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IHandle 
+										- _m2Class = "IStereotype";
+										- _filename = "PredefinedTypes.sbs";
+										- _subsystem = "PredefinedTypes";
+										- _class = "";
+										- _name = "Usage";
+										- _id = GUID 42aa4325-6112-4e88-87ce-66008878f1db;
+									}
+								}
+								- _modifiedTimeWeak = 2.15.2017::4:37:59;
+								- _dependsOn = { INObjectHandle 
+									- _m2Class = "IClass";
+									- _id = GUID af5bff9b-3ae2-470a-9c49-b59d2e759728;
+								}
+							}
+						}
+						- Stereotypes = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IHandle 
+								- _m2Class = "IStereotype";
+								- _filename = "PredefinedTypes.sbs";
+								- _subsystem = "PredefinedTypes";
+								- _class = "";
+								- _name = "Interface";
+								- _id = GUID 2a7b8a63-f54f-4379-bab0-02800a5084e1;
+							}
+						}
+						- _modifiedTimeWeak = 2.15.2017::4:37:59;
+						- weakCGTime = 2.15.2017::4:37:59;
+						- strongCGTime = 2.15.2017::4:37:47;
+						- _multiplicity = "";
+						- _itsStateChart = { IHandle 
+							- _m2Class = "";
+						}
+						- _classModifier = Unspecified;
+					}
+				}
+				{ IPort 
+					- _id = GUID 37cb0e16-d3a5-487b-81a7-335ab6b50e19;
+					- _myState = 8192;
+					- _name = "BrakeControllerProvidedPort";
+					- _modifiedTimeWeak = 2.15.2017::4:39:57;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID c69c1c44-9679-4a75-9b96-2064cd540b75;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _implicitClass = { IClass 
+						- _id = GUID c69c1c44-9679-4a75-9b96-2064cd540b75;
+						- _myState = 10240;
+						- _name = "BrakeControllerProvidedPort_implicitContract";
+						- Stereotypes = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IHandle 
+								- _m2Class = "IStereotype";
+								- _filename = "PredefinedTypes.sbs";
+								- _subsystem = "PredefinedTypes";
+								- _class = "";
+								- _name = "Interface";
+								- _id = GUID 2a7b8a63-f54f-4379-bab0-02800a5084e1;
+							}
+						}
+						- _modifiedTimeWeak = 2.15.2017::4:39:57;
+						- weakCGTime = 2.15.2017::4:39:57;
+						- strongCGTime = 2.15.2017::4:39:57;
+						- Inheritances = { IRPYRawContainer 
+							- size = 2;
+							- value = 
+							{ IGeneralization 
+								- _id = GUID 1dbb77b1-8a57-4adb-be1f-7b7fec53d51c;
+								- _modifiedTimeWeak = 1.2.1990::0:0:0;
+								- _dependsOn = { INObjectHandle 
+									- _m2Class = "IClass";
+									- _id = GUID b5435367-32c5-4e5b-91b3-225f880b61fb;
+								}
+								- _inheritanceType = iPublic;
+								- _isVirtual = 0;
+							}
+							{ IGeneralization 
+								- _id = GUID 206aba57-b251-44c0-bf75-a009553c80a0;
+								- _modifiedTimeWeak = 1.2.1990::0:0:0;
+								- _dependsOn = { INObjectHandle 
+									- _m2Class = "IClass";
+									- _id = GUID b70e8be5-9fca-45aa-9e4d-d9acbe4ed1ff;
+								}
+								- _inheritanceType = iPublic;
+								- _isVirtual = 0;
+							}
+						}
+						- _multiplicity = "";
+						- _itsStateChart = { IHandle 
+							- _m2Class = "";
+						}
+						- _classModifier = Unspecified;
+					}
+				}
+			}
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 51796178-5520-46c0-9672-a13d7eaac892;
+			- _myState = 8192;
+			- _name = "LevitationController";
+			- Stereotypes = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IStereotype";
+					- _id = GUID 9158e4f0-6ee6-4395-80df-492f9001611b;
+				}
+			}
+			- _modifiedTimeWeak = 2.15.2017::4:42:20;
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "DesignArch.sbs";
+				- _subsystem = "DesignArch";
+				- _class = "";
+				- _name = "ProcessView";
+				- _id = GUID 953016d2-f507-437b-8d2c-3c9d7c2eb126;
+			}
+			- _lastID = 2;
+			- weakCGTime = 2.15.2017::4:42:20;
+			- strongCGTime = 2.15.2017::3:1:30;
+			- Ports = { IRPYRawContainer 
+				- size = 2;
+				- value = 
+				{ IPort 
+					- _id = GUID 38b183e6-2c0b-429b-9112-75ac7161f015;
+					- _myState = 8192;
+					- _name = "LevitationControllerRequiredPort";
+					- _modifiedTimeWeak = 2.15.2017::4:35:17;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 9de86d1c-3f7d-47dd-8cb6-1c7e9ecd84b9;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _implicitClass = { IClass 
+						- _id = GUID 9de86d1c-3f7d-47dd-8cb6-1c7e9ecd84b9;
+						- _myState = 10240;
+						- _name = "LevitationControllerRequiredPort_implicitContract";
+						- Dependencies = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IDependency 
+								- _id = GUID 59cefbb2-de73-4d18-979c-980ca3259ea6;
+								- _myState = 2048;
+								- _name = "LevitaionInitiator_ControllerInterface";
+								- Stereotypes = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IHandle 
+										- _m2Class = "IStereotype";
+										- _filename = "PredefinedTypes.sbs";
+										- _subsystem = "PredefinedTypes";
+										- _class = "";
+										- _name = "Usage";
+										- _id = GUID 42aa4325-6112-4e88-87ce-66008878f1db;
+									}
+								}
+								- _modifiedTimeWeak = 2.15.2017::4:35:17;
+								- _dependsOn = { INObjectHandle 
+									- _m2Class = "IClass";
+									- _id = GUID aaaf1f0d-f006-48ce-bbe3-c897643be2c9;
+								}
+							}
+						}
+						- Stereotypes = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IHandle 
+								- _m2Class = "IStereotype";
+								- _filename = "PredefinedTypes.sbs";
+								- _subsystem = "PredefinedTypes";
+								- _class = "";
+								- _name = "Interface";
+								- _id = GUID 2a7b8a63-f54f-4379-bab0-02800a5084e1;
+							}
+						}
+						- _modifiedTimeWeak = 2.15.2017::4:35:17;
+						- weakCGTime = 2.15.2017::4:35:17;
+						- strongCGTime = 2.15.2017::4:35:6;
+						- _multiplicity = "";
+						- _itsStateChart = { IHandle 
+							- _m2Class = "";
+						}
+						- _classModifier = Unspecified;
+					}
+				}
+				{ IPort 
+					- _id = GUID 30f8cd92-803c-42d4-993c-406ac050769c;
+					- _myState = 8192;
+					- _name = "LevitationControllerProvidedPort";
+					- _modifiedTimeWeak = 2.15.2017::4:41:53;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 95eb71f6-cf34-4134-b37d-431e3e7ea921;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _implicitClass = { IClass 
+						- _id = GUID 95eb71f6-cf34-4134-b37d-431e3e7ea921;
+						- _myState = 10240;
+						- _name = "LevitationControllerProvidedPort_implicitContract";
+						- Stereotypes = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IHandle 
+								- _m2Class = "IStereotype";
+								- _filename = "PredefinedTypes.sbs";
+								- _subsystem = "PredefinedTypes";
+								- _class = "";
+								- _name = "Interface";
+								- _id = GUID 2a7b8a63-f54f-4379-bab0-02800a5084e1;
+							}
+						}
+						- _modifiedTimeWeak = 2.15.2017::4:42:20;
+						- weakCGTime = 2.15.2017::4:42:20;
+						- strongCGTime = 2.15.2017::4:41:16;
+						- Inheritances = { IRPYRawContainer 
+							- size = 2;
+							- value = 
+							{ IGeneralization 
+								- _id = GUID e49c2507-5728-4948-974f-938e3fa87c47;
+								- _modifiedTimeWeak = 1.2.1990::0:0:0;
+								- _dependsOn = { INObjectHandle 
+									- _m2Class = "IClass";
+									- _id = GUID 46fb53e3-e260-4f9e-a167-420e204100f3;
+								}
+								- _inheritanceType = iPublic;
+								- _isVirtual = 0;
+							}
+							{ IGeneralization 
+								- _id = GUID 2fc0c997-c851-4147-92c8-2a2c7e2434de;
+								- _modifiedTimeWeak = 1.2.1990::0:0:0;
+								- _dependsOn = { INObjectHandle 
+									- _m2Class = "IClass";
+									- _id = GUID 671155c0-8e5b-4387-af63-9f64e9770c9e;
+								}
+								- _inheritanceType = iPublic;
+								- _isVirtual = 0;
+							}
+						}
+						- _multiplicity = "";
+						- _itsStateChart = { IHandle 
+							- _m2Class = "";
+						}
+						- _classModifier = Unspecified;
+					}
+				}
+			}
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 2e357bdb-d802-4bf7-8723-46ad71169ce2;
+			- _myState = 8192;
+			- _name = "BrakeActuators";
+			- _modifiedTimeWeak = 2.15.2017::4:43:49;
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "DesignArch.sbs";
+				- _subsystem = "DesignArch";
+				- _class = "";
+				- _name = "ProcessView";
+				- _id = GUID 953016d2-f507-437b-8d2c-3c9d7c2eb126;
+			}
+			- _lastID = 1;
+			- weakCGTime = 2.15.2017::4:43:49;
+			- strongCGTime = 2.15.2017::3:3:1;
+			- Ports = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IPort 
+					- _id = GUID 67860cf2-93e3-4b41-a495-8f4017f68fe2;
+					- _myState = 8192;
+					- _name = "BrakeSensorRequiredPort";
+					- _modifiedTimeWeak = 2.15.2017::4:43:49;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID af46bc9b-5edb-446e-ad00-1e12aef13817;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _implicitClass = { IClass 
+						- _id = GUID af46bc9b-5edb-446e-ad00-1e12aef13817;
+						- _myState = 10240;
+						- _name = "BrakeSensorRequiredPort_implicitContract";
+						- Dependencies = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IDependency 
+								- _id = GUID c248ceed-d32a-4f15-902e-e142d783dda0;
+								- _myState = 2048;
+								- _name = "BrakeController_BrakeSensorInterface";
+								- Stereotypes = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IHandle 
+										- _m2Class = "IStereotype";
+										- _filename = "PredefinedTypes.sbs";
+										- _subsystem = "PredefinedTypes";
+										- _class = "";
+										- _name = "Usage";
+										- _id = GUID 42aa4325-6112-4e88-87ce-66008878f1db;
+									}
+								}
+								- _modifiedTimeWeak = 2.15.2017::4:43:35;
+								- _dependsOn = { INObjectHandle 
+									- _m2Class = "IClass";
+									- _id = GUID b5435367-32c5-4e5b-91b3-225f880b61fb;
+								}
+							}
+						}
+						- Stereotypes = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IHandle 
+								- _m2Class = "IStereotype";
+								- _filename = "PredefinedTypes.sbs";
+								- _subsystem = "PredefinedTypes";
+								- _class = "";
+								- _name = "Interface";
+								- _id = GUID 2a7b8a63-f54f-4379-bab0-02800a5084e1;
+							}
+						}
+						- _modifiedTimeWeak = 2.15.2017::4:43:49;
+						- weakCGTime = 2.15.2017::4:43:49;
+						- strongCGTime = 2.15.2017::4:43:49;
+						- _multiplicity = "";
+						- _itsStateChart = { IHandle 
+							- _m2Class = "";
+						}
+						- _classModifier = Unspecified;
+					}
+				}
+			}
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 8ade734a-abe9-445f-a701-a646e56bade0;
+			- _myState = 8192;
+			- _name = "BrakeSensor";
+			- _modifiedTimeWeak = 2.15.2017::4:44:27;
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "DesignArch.sbs";
+				- _subsystem = "DesignArch";
+				- _class = "";
+				- _name = "ProcessView";
+				- _id = GUID 953016d2-f507-437b-8d2c-3c9d7c2eb126;
+			}
+			- _lastID = 1;
+			- weakCGTime = 2.15.2017::4:44:27;
+			- strongCGTime = 2.15.2017::3:3:32;
+			- Ports = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IPort 
+					- _id = GUID e4d28bbf-a554-4835-b530-d30aed938cd7;
+					- _myState = 8192;
+					- _name = "BrakeActuatorRequiredPort";
+					- _modifiedTimeWeak = 2.15.2017::4:44:27;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID c37dfc31-a404-4f63-9556-d2c7a0c6b5b0;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _implicitClass = { IClass 
+						- _id = GUID c37dfc31-a404-4f63-9556-d2c7a0c6b5b0;
+						- _myState = 10240;
+						- _name = "BrakeActuatorRequiredPort_implicitContract";
+						- Dependencies = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IDependency 
+								- _id = GUID 3562acfb-5c25-46d4-8f95-09c404800723;
+								- _myState = 2048;
+								- _name = "BrakeController_BrakeActuatorsInterface";
+								- Stereotypes = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IHandle 
+										- _m2Class = "IStereotype";
+										- _filename = "PredefinedTypes.sbs";
+										- _subsystem = "PredefinedTypes";
+										- _class = "";
+										- _name = "Usage";
+										- _id = GUID 42aa4325-6112-4e88-87ce-66008878f1db;
+									}
+								}
+								- _modifiedTimeWeak = 2.15.2017::4:44:27;
+								- _dependsOn = { INObjectHandle 
+									- _m2Class = "IClass";
+									- _id = GUID b70e8be5-9fca-45aa-9e4d-d9acbe4ed1ff;
+								}
+							}
+						}
+						- Stereotypes = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IHandle 
+								- _m2Class = "IStereotype";
+								- _filename = "PredefinedTypes.sbs";
+								- _subsystem = "PredefinedTypes";
+								- _class = "";
+								- _name = "Interface";
+								- _id = GUID 2a7b8a63-f54f-4379-bab0-02800a5084e1;
+							}
+						}
+						- _modifiedTimeWeak = 2.15.2017::4:44:27;
+						- weakCGTime = 2.15.2017::4:44:27;
+						- strongCGTime = 2.15.2017::4:44:18;
+						- _multiplicity = "";
+						- _itsStateChart = { IHandle 
+							- _m2Class = "";
+						}
+						- _classModifier = Unspecified;
+					}
+				}
+			}
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID ff710c64-fb52-4713-a209-f03fe1c0e688;
+			- _myState = 8192;
+			- _name = "LevitationActuator";
+			- _modifiedTimeWeak = 2.15.2017::4:45:21;
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "DesignArch.sbs";
+				- _subsystem = "DesignArch";
+				- _class = "";
+				- _name = "ProcessView";
+				- _id = GUID 953016d2-f507-437b-8d2c-3c9d7c2eb126;
+			}
+			- _lastID = 1;
+			- weakCGTime = 2.15.2017::4:45:21;
+			- strongCGTime = 2.15.2017::3:4:34;
+			- Ports = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IPort 
+					- _id = GUID c4aa92ea-af0f-4e9c-b3e6-c92840623dcc;
+					- _myState = 8192;
+					- _name = "LevitationActuatorRequiredPort";
+					- _modifiedTimeWeak = 2.15.2017::4:45:21;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 8bb02f51-a2a4-43f5-982f-d3694729e740;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _implicitClass = { IClass 
+						- _id = GUID 8bb02f51-a2a4-43f5-982f-d3694729e740;
+						- _myState = 10240;
+						- _name = "LevitationActuatorRequiredPort_implicitContract";
+						- Dependencies = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IDependency 
+								- _id = GUID ecda53f5-a384-4983-b33a-82597e95d640;
+								- _myState = 2048;
+								- _name = "LevitationController_ActuatorsInterface";
+								- Stereotypes = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IHandle 
+										- _m2Class = "IStereotype";
+										- _filename = "PredefinedTypes.sbs";
+										- _subsystem = "PredefinedTypes";
+										- _class = "";
+										- _name = "Usage";
+										- _id = GUID 42aa4325-6112-4e88-87ce-66008878f1db;
+									}
+								}
+								- _modifiedTimeWeak = 2.15.2017::4:45:1;
+								- _dependsOn = { INObjectHandle 
+									- _m2Class = "IClass";
+									- _id = GUID 671155c0-8e5b-4387-af63-9f64e9770c9e;
+								}
+							}
+						}
+						- Stereotypes = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IHandle 
+								- _m2Class = "IStereotype";
+								- _filename = "PredefinedTypes.sbs";
+								- _subsystem = "PredefinedTypes";
+								- _class = "";
+								- _name = "Interface";
+								- _id = GUID 2a7b8a63-f54f-4379-bab0-02800a5084e1;
+							}
+						}
+						- _modifiedTimeWeak = 2.15.2017::4:45:21;
+						- weakCGTime = 2.15.2017::4:45:21;
+						- strongCGTime = 2.15.2017::4:45:21;
+						- _multiplicity = "";
+						- _itsStateChart = { IHandle 
+							- _m2Class = "";
+						}
+						- _classModifier = Unspecified;
+					}
+				}
+			}
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 5870db89-355a-4534-ba84-f7f2c9b57a8d;
+			- _myState = 8192;
+			- _name = "LevitationSensor";
+			- _modifiedTimeWeak = 2.15.2017::4:46:33;
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "DesignArch.sbs";
+				- _subsystem = "DesignArch";
+				- _class = "";
+				- _name = "ProcessView";
+				- _id = GUID 953016d2-f507-437b-8d2c-3c9d7c2eb126;
+			}
+			- _lastID = 1;
+			- weakCGTime = 2.15.2017::4:46:33;
+			- strongCGTime = 2.15.2017::3:6:19;
+			- Ports = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IPort 
+					- _id = GUID fdd6896c-a8ce-472d-87d3-72d6f04458a2;
+					- _myState = 8192;
+					- _name = "LevitationSensorRequiredPort";
+					- _modifiedTimeWeak = 2.15.2017::4:46:33;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 5efcc331-21ea-4a76-b077-36b1f220bc37;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _implicitClass = { IClass 
+						- _id = GUID 5efcc331-21ea-4a76-b077-36b1f220bc37;
+						- _myState = 10240;
+						- _name = "LevitationSensorRequiredPort_implicitContract";
+						- Dependencies = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IDependency 
+								- _id = GUID e22fa1c6-8575-4785-9b81-94d3ae11fc13;
+								- _myState = 2048;
+								- _name = "LevitationController_SensorInterface";
+								- Stereotypes = { IRPYRawContainer 
+									- size = 1;
+									- value = 
+									{ IHandle 
+										- _m2Class = "IStereotype";
+										- _filename = "PredefinedTypes.sbs";
+										- _subsystem = "PredefinedTypes";
+										- _class = "";
+										- _name = "Usage";
+										- _id = GUID 42aa4325-6112-4e88-87ce-66008878f1db;
+									}
+								}
+								- _modifiedTimeWeak = 2.15.2017::4:46:33;
+								- _dependsOn = { INObjectHandle 
+									- _m2Class = "IClass";
+									- _id = GUID 46fb53e3-e260-4f9e-a167-420e204100f3;
+								}
+							}
+						}
+						- Stereotypes = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IHandle 
+								- _m2Class = "IStereotype";
+								- _filename = "PredefinedTypes.sbs";
+								- _subsystem = "PredefinedTypes";
+								- _class = "";
+								- _name = "Interface";
+								- _id = GUID 2a7b8a63-f54f-4379-bab0-02800a5084e1;
+							}
+						}
+						- _modifiedTimeWeak = 2.15.2017::4:46:33;
+						- weakCGTime = 2.15.2017::4:46:33;
+						- strongCGTime = 2.15.2017::4:46:17;
+						- _multiplicity = "";
+						- _itsStateChart = { IHandle 
+							- _m2Class = "";
+						}
+						- _classModifier = Unspecified;
+					}
+				}
+			}
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID aaaf1f0d-f006-48ce-bbe3-c897643be2c9;
+			- _myState = 8192;
+			- _name = "LevitaionInitiator_ControllerInterface";
+			- Stereotypes = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IStereotype";
+					- _filename = "PredefinedTypes.sbs";
+					- _subsystem = "PredefinedTypes";
+					- _class = "";
+					- _name = "Interface";
+					- _id = GUID 2a7b8a63-f54f-4379-bab0-02800a5084e1;
+				}
+			}
+			- _modifiedTimeWeak = 2.15.2017::4:34:5;
+			- weakCGTime = 2.15.2017::4:34:5;
+			- strongCGTime = 2.15.2017::4:34:5;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID af5bff9b-3ae2-470a-9c49-b59d2e759728;
+			- _myState = 8192;
+			- _name = "BrakingInitiator_ControllerInterface";
+			- Stereotypes = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IStereotype";
+					- _filename = "PredefinedTypes.sbs";
+					- _subsystem = "PredefinedTypes";
+					- _class = "";
+					- _name = "Interface";
+					- _id = GUID 2a7b8a63-f54f-4379-bab0-02800a5084e1;
+				}
+			}
+			- _modifiedTimeWeak = 2.15.2017::4:36:26;
+			- weakCGTime = 2.15.2017::4:36:26;
+			- strongCGTime = 2.15.2017::4:36:26;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID b5435367-32c5-4e5b-91b3-225f880b61fb;
+			- _myState = 8192;
+			- _name = "BrakeController_BrakeSensorInterface";
+			- Stereotypes = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IStereotype";
+					- _filename = "PredefinedTypes.sbs";
+					- _subsystem = "PredefinedTypes";
+					- _class = "";
+					- _name = "Interface";
+					- _id = GUID 2a7b8a63-f54f-4379-bab0-02800a5084e1;
+				}
+			}
+			- _modifiedTimeWeak = 2.15.2017::4:39:5;
+			- weakCGTime = 2.15.2017::4:39:5;
+			- strongCGTime = 2.15.2017::4:39:5;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID b70e8be5-9fca-45aa-9e4d-d9acbe4ed1ff;
+			- _myState = 8192;
+			- _name = "BrakeController_BrakeActuatorsInterface";
+			- Stereotypes = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IStereotype";
+					- _filename = "PredefinedTypes.sbs";
+					- _subsystem = "PredefinedTypes";
+					- _class = "";
+					- _name = "Interface";
+					- _id = GUID 2a7b8a63-f54f-4379-bab0-02800a5084e1;
+				}
+			}
+			- _modifiedTimeWeak = 2.15.2017::4:39:39;
+			- weakCGTime = 2.15.2017::4:39:39;
+			- strongCGTime = 2.15.2017::4:39:39;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 46fb53e3-e260-4f9e-a167-420e204100f3;
+			- _myState = 8192;
+			- _name = "LevitationController_SensorInterface";
+			- Stereotypes = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IStereotype";
+					- _filename = "PredefinedTypes.sbs";
+					- _subsystem = "PredefinedTypes";
+					- _class = "";
+					- _name = "Interface";
+					- _id = GUID 2a7b8a63-f54f-4379-bab0-02800a5084e1;
+				}
+			}
+			- _modifiedTimeWeak = 2.15.2017::4:41:43;
+			- weakCGTime = 2.15.2017::4:41:43;
+			- strongCGTime = 2.15.2017::4:41:43;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 671155c0-8e5b-4387-af63-9f64e9770c9e;
+			- _myState = 8192;
+			- _name = "LevitationController_ActuatorsInterface";
+			- Stereotypes = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IStereotype";
+					- _filename = "PredefinedTypes.sbs";
+					- _subsystem = "PredefinedTypes";
+					- _class = "";
+					- _name = "Interface";
+					- _id = GUID 2a7b8a63-f54f-4379-bab0-02800a5084e1;
+				}
+			}
+			- _modifiedTimeWeak = 2.15.2017::4:42:20;
+			- weakCGTime = 2.15.2017::4:42:20;
+			- strongCGTime = 2.15.2017::4:42:20;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 8ec9c940-0d9e-49bf-950c-ce7701dda5ef;
+			- _myState = 8192;
+			- _name = "TCPSocket_BrakingInitiatorInterface";
+			- Stereotypes = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IStereotype";
+					- _filename = "PredefinedTypes.sbs";
+					- _subsystem = "PredefinedTypes";
+					- _class = "";
+					- _name = "Interface";
+					- _id = GUID 2a7b8a63-f54f-4379-bab0-02800a5084e1;
+				}
+			}
+			- _modifiedTimeWeak = 2.15.2017::4:47:17;
+			- weakCGTime = 2.15.2017::4:47:17;
+			- strongCGTime = 2.15.2017::4:47:17;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 6b8a976c-2bfd-477c-8c02-00589a93b250;
+			- _myState = 8192;
+			- _name = "TCPSocket_LevitationModuleInterface";
+			- Stereotypes = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IStereotype";
+					- _filename = "PredefinedTypes.sbs";
+					- _subsystem = "PredefinedTypes";
+					- _class = "";
+					- _name = "Interface";
+					- _id = GUID 2a7b8a63-f54f-4379-bab0-02800a5084e1;
+				}
+			}
+			- _modifiedTimeWeak = 2.15.2017::4:48:5;
+			- weakCGTime = 2.15.2017::4:48:5;
+			- strongCGTime = 2.15.2017::4:48:5;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+	}
+	- _configurationRelatedTime = 2.15.2017::3:7:13;
+}
+

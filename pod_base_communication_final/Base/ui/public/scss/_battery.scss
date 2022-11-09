@@ -1,0 +1,71 @@
+/*================================
+        BATTERY SYLES
+=================================*/
+.battery-container {
+    padding-top: 10px;
+    position: relative;
+    .battery {
+        position: absolute;
+        display: inline-block;
+        width: 2.2rem;
+        background-color: transparent;
+        box-sizing: border-box;
+        border: .2em #505050 solid;
+        margin-top: 1em;
+        top: 5px;
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
+        padding-bottom: 0.2rem; 
+        &:before {
+            content: "";
+            height: .3em;
+            width: 1em;
+            background-color: #505050;
+            position: absolute;
+            margin-top: -.5em;
+            margin-left: .2em;
+        }
+        .bar {
+          background-color: transparent;
+          height: 0.75rem;
+          width: 100%;
+          margin-top: 2px;
+        }
+        &.soc--4 {
+            .bar {
+                background-color: #19ad38;
+            }
+        }
+        &.soc--3 { 
+            .bar {
+                background-color: #19ad38;
+            }
+            .bar:first-child {
+                background-color: transparent;
+            }
+        }
+        &.soc--2 {
+            .bar {
+                background-color: #19ad38;
+            }
+            .bar:nth-child(-n+2) {
+                background-color: transparent;
+            }
+        }
+        &.soc--1 {
+            .bar {
+                background-color: #f8774b;
+            }
+            .bar:nth-child(-n+3) {
+                background-color: transparent;
+            }
+        }
+    }
+    .battery-info {
+        padding-left: 30px;
+        display: inline-block;
+    }
+    .title {
+        color: #717171;
+    }
+}

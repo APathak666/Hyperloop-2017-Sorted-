@@ -1,0 +1,137 @@
+/*================================
+        SPEED GAUGE SYLES
+=================================*/
+
+$height: 18rem;
+
+$inner-ring-top: calc(50% - 1.5rem);
+
+$label_font_size: 1rem;
+$speed_font_size: 3rem;
+$unit_font_size: 1.4rem;
+
+.speedometer-container {
+    width: 25rem;
+    height: $height;
+    position: relative;
+}
+.speedometer {
+    .inner-ring {
+        width: 10rem;
+        height: 10rem;
+        position: absolute;
+        top: $inner-ring-top;
+        left: calc(50% - 5rem);
+        &:before,
+        &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border: 2px solid transparent;
+            border-top: 2px solid #3b3d45;
+            border-right: 2px solid #3b3d45;
+            border-radius: 50%;
+        }
+        &:before {
+            -webkit-transform: rotate(-75deg);
+            transform: rotate(-75deg);
+        }
+        &:after {
+            -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+        }
+    }
+    .outer-ring {
+        width: 20rem;
+        height: 18rem;
+        position: absolute;
+        top: calc(50% - 6rem);
+        left: calc(50% - 10rem);
+        border-radius: 50%;
+    }
+    .digit-ring {
+        position: absolute;
+        top: calc(50% + 3.5rem);
+        left: 50%;
+    }
+    .tick {
+        width: 0.8rem;
+        border-top: 2px solid #3b3d45;
+        position: absolute;
+        top: calc(50% - 0.1rem);
+        left: calc(50% - 0.4rem);
+        &:nth-child(6n+1) {
+            width: 1.6rem;
+            left: calc(50% - 0.8rem);
+            border-color: #787a81;
+        }
+    }
+    .digit {
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        top: calc(50% - 1rem);
+        left: calc(50% - 1rem);
+        font-weight: bold;
+        text-align: center;
+        line-height: 2rem;
+    }
+    .details {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 21rem;
+        height: 18rem;
+        position: absolute;
+        padding-top: calc(13.8rem - #{$label_font_size} - #{$speed_font_size} - #{$unit_font_size});
+        top: 0;
+        left: calc(50% - 10.5rem);
+    }
+    .label {
+        margin: 0;
+        font-size: $label_font_size;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .speed {
+        margin: 0;
+        font-size: $speed_font_size;
+        color: #fff;
+    }
+    .unit {
+        margin: 0;
+        font-size: $unit_font_size;
+    }
+    .guage-progress {
+        width: 10rem;
+        height: 10rem;
+        position: absolute;
+        top: calc(50% - 1.5rem);
+        left: calc(50% - 5rem);
+        border-radius: 50%;
+        &:before {
+            content: "";
+            position: absolute;
+            top: -0.2rem;
+            left: calc(50% - 0.3rem);
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 50%;
+            background-color: #f1252e;
+            box-shadow: 0 0 6rem 2rem rgba(241, 37, 46, 0.35);
+        }
+    }
+}

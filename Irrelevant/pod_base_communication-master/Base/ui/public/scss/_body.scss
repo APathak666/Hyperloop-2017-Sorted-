@@ -1,0 +1,71 @@
+/*================================
+    BODY STYLES & OVERLAY 
+=================================*/
+* {
+    &:before,
+    &:after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1;
+    color: #666;
+    /*-webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;*/
+    background-color: #000;
+    &:before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: -webkit-radial-gradient(top left, circle, #fff, transparent);
+        background-image: radial-gradient(circle at top left, #fff, transparent);
+        opacity: 0.12;
+        z-index: -1;
+    }
+    padding-left: 300px;
+}
+@media only screen and (max-width : 992px) {
+    body {
+    padding-left: 0;
+    }
+}
+.overlay {
+    pointer-events: none;
+    &:before,
+    &:after {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+    &:before {
+        background-image: -webkit-radial-gradient(top left, circle, #25fabb, transparent);
+        background-image: radial-gradient(circle at top left, #25fabb, transparent);
+        opacity: 0.04;
+    }
+    &:after {
+        background-image: -webkit-radial-gradient(bottom right, circle, #874bd7, transparent);
+        background-image: radial-gradient(circle at bottom right, #874bd7, transparent);
+        opacity: 0.2;
+    }
+}
+

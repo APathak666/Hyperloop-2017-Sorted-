@@ -1,0 +1,35 @@
+Navigation Node:
+
+	sys_state_change.ext = 0;
+    sys_state_change.id = 0x05; //5
+    sys_state_change.len = 1;
+    sys_state_ack.ext = 0;
+    sys_state_ack.id = 0x09; //9
+    sys_state_ack.len = 1;
+    health_ack.ext = 0;
+    health_ack.id = 0x01; //1
+    health_ack.len = 1;
+    lts_packet1.ext = 0;
+    lts_packet1.id = 0x13; //19
+    lts_packet1.len = 8;
+    lts_packet2.ext = 0;
+    lts_packet2.id = 0x14; //20
+    lts_packet2.len = 8;
+    attitude_acc.ext = 0;
+    attitude_acc.id = 0x10; //16
+    attitude_acc.len = 8;
+    pos_vel.ext = 0;
+    pos_vel.id = 0x11; //17
+    pos_vel.len = 8;
+    stripe_count_msg.ext = 0;
+    stripe_count_msg.id = 0x12; //18
+    stripe_count_msg.len = 1;
+    LinAct_msg.ext = 0;
+    LinAct_msg.id = 0xA; //10
+    LinAct_msg.len = 1;
+    brake_msg.ext=0;
+    brake_msg.id = 0xC; //12
+    brake_msg.len = 8;
+    lsd_msg.ext = 0;
+    lsd_msg.id = 0xB; //11
+    lsd_msg.len=8;

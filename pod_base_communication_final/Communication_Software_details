@@ -1,0 +1,43 @@
+Communication Node - Beagle Bone Black
+Base Station Laptop 
+
+BBB:
+
+1. An automation script to initiate the followng:
+	a. Start CAN bus (dcan0)
+	b. Sart the Master Code overlooking the IPC
+
+2. CAN communication node:
+	a. Read Data from the CAN bus
+	b. Update the IPC for transfer of data to socket process
+	c.
+
+3. Socket Code:
+	a. UDP Dump of the data specified by the SpaceX requirements (Separate Process)
+	b. TCP socket communicating with two base station laptops i.e two node.js servers (Separate Process)
+	c. Receive data from the can process via IPC
+
+4.  IPC code
+	a.  Initiating the IPC process
+	
+5. Health Packet Checks:
+	a. Implement a health packet algo to both the Base stations separate from the node servers
+
+
+Base Sation (Laptop) x2:
+
+1. Node.js Server:
+	a.
+
+
+
+
+
+
+
+
+
+
+Task list:
+1. Create a static ip on the beaglebone
+2.

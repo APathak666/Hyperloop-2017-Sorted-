@@ -1,0 +1,36 @@
+{
+  "name": "pod_base_communication",
+  "description": "clientSendToNode.c :file has code which sends a data packet from client to node server\r \t\tfunc used is send\r clienRecFrmNode.c :file has code which receives data from node server and display it.\r                  function used  is recv",
+  "version": "1.0.0",
+  "author": "ask2696,aakp10,AniMysore74,Poulami-Sarkar",
+  "bugs": {
+    "url": "https://github.com/ask2696/pod_base_communication/issues"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "formidable": "^1.1.1",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-uglify": "^3.0.0",
+    "jquery": "^3.2.1",
+    "jquery-ui-dist": "^1.12.1",
+    "materialize-css": "^0.100.1",
+    "socket.io": "^2.0.3",
+    "svg-gauge": "^1.0.2"
+  },
+  "homepage": "https://github.com/ask2696/pod_base_communication#readme",
+  "license": "ISC",
+  "main": "nodeServer.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ask2696/pod_base_communication.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

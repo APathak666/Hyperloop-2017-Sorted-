@@ -1,0 +1,33 @@
+Instructions before uploading sensor code to Teensy/ Arduino.
+
+IMU-BNO055: Changes in the Adafruit_BNO055.cpp change getVector(<acceleration vector>)
+
+
+BMP280: The one which we have is GY-BMP-280, so there is a slight modification before using the Adafruit_BMP280 library. In the Adafruit_BMP280.h change 
+
+#define BMP280_ADDRESS                (0x77)
+
+to 
+
+#define BMP280_ADDRESS                (0x76)
+
+
+MCP9808: This temperature sensor is not using the Adafruit Sensor library. Use bare-metal to write I2C signals in the bus.
+
+Check Library for register addresses,etc.
+
+
+MCP3008: This ADC uses bare-metal SPI programming. The MCP3008 library found online uses obsolete SPI bus pins and hence doesn't work.
+Start Signal : 0x01
+
+Channel 0 : 0x08
+Channel 1 : 0x09
+Channel 2 : 0x0A
+Channel 3 : 0x0B
+Channel 4 : 0x0C
+Channel 5 : 0x0D
+Channel 6 : 0x0E
+Channel 7 : 0x0F
+
+
+Pressure: Device ID is 0x28.

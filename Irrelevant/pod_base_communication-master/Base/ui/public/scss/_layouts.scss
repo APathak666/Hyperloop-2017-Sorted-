@@ -1,0 +1,208 @@
+/*================================
+            LAYOUTS
+=================================*/
+
+/*================================
+        SIDEBAR LAYOUTS
+=================================*/
+.sidebar {
+    background-color: rgba(22, 22, 22, 0.8);
+    .card-panel,
+    .card, {
+        background-color: rgba(120, 120, 120, 0.07);
+    }
+    //removing the styling added by materialize to collapsibles
+    .collapsible {
+        .collapsible-header {
+            padding: 0;
+            &:hover {
+                background-color: initial;
+                cursor: initial;
+            }
+        }
+        .collapsible li, .collapsible-body{
+            line-height: initial;
+            background-color: initial;
+        }
+    }
+    .branding {
+        img {
+            width:100%;
+            max-width: 200px;
+        }
+    }
+    .power{
+        ;
+    }
+    /*================================
+            HEALTH CHECK
+    =================================*/
+    .health {
+
+        //give some space between button and the card title
+        .collapsible {
+            margin-top: 30px;
+        }
+    }
+    .health-display {
+        .check-item {
+            font-size: 12px;
+            margin: 10px 0;
+            .check-item-name {
+                padding-left: 10px;
+            }
+            .status {
+                vertical-align: middle;
+            }
+        }
+    }
+    .controls {
+        h6 {
+            font-size: 1.5rem;
+            padding-top: 1rem;
+        }
+        .switch {
+            label {
+               font-size: 1rem;
+            }
+        }
+    }
+    .communication {
+        h6 {
+            &:after {
+                content: "";
+                position: absolute;
+                width: 0.6rem;
+                height: 0.6rem;
+                border-radius: 10px;
+                margin-left: 10px;
+                background-color: crimson;
+            }
+        }
+    }
+    .vitals {
+        .pusher {
+            font-size: 12px;
+            position: relative;
+            &:after {
+                top: 3px;
+                content: "";
+                position: absolute;
+                width: 0.6rem;
+                height: 0.6rem;
+                border-radius: 10px;
+                margin-left: 10px;
+
+            }
+          }
+          .engage{
+            &:after{
+              background-color: green;
+            }
+          }
+          .disengage{
+            &:after {
+              background-color: crimson;
+          }
+        }
+    }
+    .console {
+        .display {
+            background-color: #000;
+            padding: 30px 5px;
+            color: white;
+            font-family: monospace;
+            font-size: 10px;
+        }
+    }
+}
+#left-sidebar {
+    width: 300px;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+    overflow: hidden;
+    &:hover {
+        overflow-y: auto;
+    }
+}
+.gauge-container{
+    width: 100px;
+    //height: 40px;
+    left: 50%;
+    margin: auto;
+}
+.pusher-detachment{
+  h6 {
+      &:after {
+          content: "";
+          position: absolute;
+          width: 0.6rem;
+          height: 0.6rem;
+          border-radius: 10px;
+          margin-left: 10px;
+          background-color: crimson;
+      }
+    }
+}
+/*================================
+      MAIN DASH BOARD LAYOUTS
+=================================*/
+
+.main-dash {
+    .top-center-bar {
+        background-color: rgba(22, 22, 22, 0.8);
+        .card-panel,
+        .card {
+            background-color: rgba(120, 120, 120, 0.07);
+        }
+    }
+    #velocity, #acceleration {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .ypr {
+        padding-left: calc(50% - 150px);
+    }
+    .levitation, .brakes {
+        text-align: center;
+        vertical-align: middle;
+        svg {
+            width: 80%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2rem;
+            margin-top: 20px;
+        }
+        span.value {
+            color: #fff;
+            font-size: 1.6rem;
+        }
+        span.unit {
+            color: #aaa;
+            margin-right: 15px;
+        }
+        span.dotted-box {
+            border: dotted 1px #eee;
+            color: #eee;
+            padding: 5px;
+            margin-right: 5px;
+        }
+    }
+    .brakes {
+        p {
+            margin-top: 4rem;
+        }
+    }
+    .levitation {
+        img {
+            width: 90%;
+        }
+    }
+    .foot {
+        padding: 3rem;
+        margin-top: 5rem;
+    }
+}

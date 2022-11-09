@@ -1,0 +1,20 @@
+Description:
+
+To interact with a CAN bus and establish a base station to receive and send data to the CAN Network
+
+File Structure:
+
+./Base: Contains the Base station server files for hosting the web application as well interacting with socket
+		from the pod
+	./Base/ui/ : Contains the updated ui and the server files hosting the new ui.
+	./Base/server_c_socket.js: TCP socket node server to interact with c socket and host index.html for displaying data
+	./Base/server_py_socket.js: TCP socket node server to interact with py socket and host
+	./Base/server_udp.js: UDP socket node server to interact with py socket and host
+	./Base/package.json: installs all the node.js dependencies
+
+./BBB: Contains all the files for establishing the socket and interacting with the pod CAN bus
+	./BBB/can_py/test: Contains files that can separately test the CAN bus
+		./BBB/can_py/test/can_send.py: sends data onto the can bus
+		./BBB/can_py/test/can_receive.py: listens to data on the can bus
+	./BBB/can_py/comm_node.py: Template application, sends and receives data from canbus and the base station server
+	./BBB/c_sockets/pod_node.c: Template application, sends and receives data the base station server via a socket to be integrate with a msg queue.

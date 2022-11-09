@@ -1,0 +1,455 @@
+27a28,29
+> #include <cmath>
+> 
+37a40
+> #define PUSHER_DETACHMENT_POSITION 1600
+49a53,60
+> #define  XGyroOffset 177
+> #define  YGyroOffset -33
+> #define  ZGyroOffset -52
+> #define  ZAccelOffset 870
+> #define  YAccelOffset -1525
+> #define  XAccelOffset -108 // 1688 factory default for my test chip
+> 
+> 
+236,290c247,248
+<     mpuInterrupt = true;
+<     //Need to ask about xEventGroup!
+< }
+< 
+< void setup_accelerometer() {
+<     #if I2CDEV_IMPLEMENTATION == I2CDEV_ARDUINO_WIRE
+<         Wire.begin();
+<     #elif I2CDEV_IMPLEMENTATION == I2CDEV_BUILTIN_FASTWIRE
+<         Fastwire::setup(400, true);
+<     #endif
+< 
+<     Serial.begin(115200); //---??
+<     while (!Serial); 
+< 
+<     Serial.println(F("Initializing I2C devices..."));
+<     mpu.initialize();
+<     // verify connection
+<     Serial.println(F("Testing device connections..."));
+<     Serial.println(mpu.testConnection() ? F("MPU6050 connection successful") : F("MPU6050 connection failed"));
+<     // wait for ready
+<     // load and configure the DMP
+<     Serial.println(F("Initializing DMP..."));
+<     Serial.println(F("Fuck DMP"));
+<     devStatus = mpu.dmpInitialize();
+<     // supply your own gyro offsets here, scaled for min sensitivity
+<     mpu.setXGyroOffset(177);
+<     mpu.setYGyroOffset(-33);
+<     mpu.setZGyroOffset(-52);
+<     mpu.setZAccelOffset(870);
+<     mpu.setYAccelOffset(-1525);
+<     mpu.setXAccelOffset(-108); // 1688 factory default for my test chip
+<     // make sure it worked (returns 0 if so)
+<     if (devStatus == 0) {
+<         // turn on the DMP, now that it's ready
+<         Serial.println(F("Enabling DMP..."));
+<         mpu.setDMPEnabled(true);
+<         // enable Arduino interrupt detection
+<         Serial.println(F("Enabling interrupt detection (Arduino external interrupt 0)..."));
+<         pinMode(5, INPUT_PULLUP);
+<         attachInterrupt(5, dmpDataReady, CHANGE);
+<         mpuIntStatus = mpu.getIntStatus();
+<         // set our DMP Ready flag so the main loop() function knows it's okay to use it
+<         Serial.println(F("DMP ready! Waiting for first interrupt..."));
+<         dmpReady = true;
+<         // get expected DMP packet size for later comparison
+<         packetSize = mpu.dmpGetFIFOPacketSize();
+<     } else {
+<         // ERROR!
+<         // 1 = initial memory load failed
+<         // 2 = DMP configuration updates failed
+<         // (if it's going to break, usually the code will be 1)
+<         Serial.print(F("DMP Initialization failed (code "));
+<         Serial.print(devStatus);
+<         Serial.println(F(")"));
+<     }
+---
+>   mpuInterrupt = true;
+>   //Need to ask about xEventGroup!
+294,296c252,254
+<   uint16_t local_acceleration;
+<   uint16_t local_velocity;
+<   uint16_t local_position;
+---
+>   uint16_t local_acceleration =0;
+>   uint16_t local_velocity =0 ;
+>   uint16_t local_position =0;
+300c258,259
+<   setup_accelerometer();
+---
+>   pinMode(5, INPUT_PULLUP);
+>   attachInterrupt(5, dmpDataReady, CHANGE);
+308,310d266
+<     /*
+<     Code to get local_acceleration
+<     */
+324c280
+<         Serial.println(F("FIFO overflow!"));
+---
+>         Display.println("Navigation Accelerometer: FIFO overflow!");
+330c286
+<         Serial.print(fifoCount);
+---
+>         Display.println(fifoCount);
+345,348c301
+<           Serial.print("areal\t");
+<           Serial.print("\t");
+<           /*acc_y = (aaWorld.y)*9.8/16384;
+<           Serial.print(acc_y);
+---
+>           Display.println("areal\t");
+350,353d302
+<           acc_z = (aaWorld.z)*9.8/16384;
+<           Serial.print(acc_z);
+<           Serial.print("\t");
+<           Serial.print(counter);*/
+456d404
+< 
+462c410
+<     if ((local_pitch> PitchMin && local_pitch < PitchMax) && (local_yaw>YawMin && local_yaw<YawMax) && (local_roll>RollMin && local_roll<RollMax)){
+---
+>     if ((local_pitch> PitchMin && local_pitch < PitchMax) && (local_yaw>YawMin && local_yaw<YawMax)){
+536a485,632
+> void brakingPID(void* args){
+>   float Kp, Ki, Kd;
+>   uint32_t local_position;
+>   uint32_t local_velocity;
+>   uint32_t local_acceleration;
+>   uint32_t desired_position;
+>   uint32_t desired_velocity;
+>   double x, x1, p1, p2, p3, p4, p5, p6, vel;
+>   
+>   x1 = 350.2;
+>   x = (x1 - 420.9)/215.9;
+>   p1 =     -0.9772 ;
+>   p2 =      -2.929  ;
+>   p3 =     -0.8259 ;
+>   p4 =      -3.175 ;
+>   p5 =      -20.88 ;
+>   p6 =       69.97 ;
+> 
+>   brake_msg.ext=0;
+>   brake_msg.id = 0xC; //12
+>   brake_msg.len = 1;
+> 
+>   ulTaskNotifyTake(pdTRUE, portMAX_DELAY);
+> 
+>   xSemaphoreTake( accMutex, portMAX_DELAY );
+>   local_velocity=global_velocity; 
+>   local_position = global_position;
+>   local_acceleration = global_acceleration;
+>   xSemaphoreGive( accMutex );
+> 
+> 
+>   if((local_velocity>75)&&(local_velocity<=80)){
+>     Kp=3;
+>     Ki=0.1;
+>     Kd=0.01;    
+>   }
+>   else if((local_velocity>70)&&(local_velocity<=75)){
+>     Kp=3;
+>     Ki=0.1;
+>     Kd=0.01;    
+>   }
+> 
+>   else if((local_velocity>65)&&(local_velocity<=70)){
+>     Kp=3.5;
+>     Ki=0.2;
+>     Kd=0.01;    
+>   }
+>   
+>   else if((local_velocity>60)&&(local_velocity<=65)){
+>     Kp=3.5;
+>     Ki=0.3;
+>     Kd=0.01;    
+>   }
+> 
+>   else if((local_velocity>55)&&(local_velocity<=60)){
+>     Kp=3.7;
+>     Ki=0.35;
+>     Kd=0.01;    
+>   }
+> 
+>   else if((local_velocity>50)&&(local_velocity<=55)){
+>     Kp=4.5;
+>     Ki=0.45;
+>     Kd=0.01;    
+>   }
+> 
+>   else if((local_velocity>45)&&(local_velocity<=50)){
+>     Kp=4.8;
+>     Ki=0.48;
+>     Kd=0.01;    
+>   }
+> 
+>   else if((local_velocity>40)&&(local_velocity<=45)){
+>     Kp=5.6;
+>     Ki=0.55;
+>     Kd=0.01;    
+>   }
+>   else{
+>     xTaskNotifyGive(CANS);
+>   }
+>   
+>   while (braking_sep_avg > 11){
+>     xSemaphoreTake( accMutex, portMAX_DELAY );
+>     local_velocity=global_velocity; 
+>     local_position = global_position;
+>     local_acceleration = global_acceleration;
+>     xSemaphoreGive( accMutex );
+>   
+>   /*desired_velocity =  p1*pow(x,5) + p2*pow(x,4)  + p3*pow(x,3) + p4*pow(x,2) + p5*x + p6; 
+>     desired_position = 
+>     desired_acceleration = 
+>     
+>     x_err = (Kp*(desired_velocity - local_velocity) + Ki*(desired_distance - local_distance) +Kd*(desired_acceleration - local_acceleration));
+>     
+>     brake_msg.buf[0]=x_err*7;
+>     can0.write(brake_msg); 
+>     */
+>     vTaskDelay(pdMS_TO_TICKS(5));
+>   }
+>     /*
+>       Defer processing to a task that stops the motor at the specified distance and deletes the pidTask
+>     */
+>   
+> }
+> 
+> void lowSpeedDrive(void *args){
+> 
+> }
+> 
+> void linearActuator(void* args){
+>   uint32_t local_velocity;
+>   uint32_t local_position;
+>   float time_to_deploy;
+> 
+>   LinAct_msg.ext = 0;
+>   LinAct_msg.id = 0xA; //10
+>   LinAct_msg.len = 1;
+> 
+>   xSemaphoreTake( accMutex, portMAX_DELAY );
+>   local_position = global_position;
+>   xSemaphoreGive(accMutex);
+>   time_to_deploy = (PUSHER_DETACHMENT_POSITION - local_position)/local_velocity;
+> 
+>   ulTaskNotifyTake(pdTRUE, portMAX_DELAY);
+>   while (time_to_deploy > 4){
+>     vTaskDelay(pdMS_TO_TICKS(500));
+>     xSemaphoreTake( accMutex, portMAX_DELAY );
+>     local_position = global_position;
+>     xSemaphoreGive(accMutex);
+>     time_to_deploy = (PUSHER_DETACHMENT_POSITION - local_position)/local_velocity;
+>   }
+>     
+>   LinAct_msg.buf[0]=1;
+>   Can0.write(LinAct_msg);         //Begin retraction of wheels
+> }
+> 
+> 
+> void lts (void* args){
+>   //Update  values of global variables braking_sep_1, braking_sep_2,braking_sep_3,braking_sep_4;
+>   //Compute braking_sep_avg
+> }
+> 
+> void brakeRetraction (void* args){
+>   ulTaskNotifyTake (pdTRUE, portMAX_DELAY);
+>   //send data pkt to reverse direction of the stepper motor and move it to 15mm at a constant frequency 
+> }
+> 
+> 
+762,790d857
+< // TTD: (1600-x_curr) / V
+< void linearActuator(void* args){
+<   uint32_t velocity;
+<   uint32_t c_pos;
+<   uint32_t TTD;
+<   xSemaphoreTake( accMutex, portMAX_DELAY );
+<   velocity = global_velocity;
+<   c_pos = global_position;
+<   xSemaphoreGive(accMutex);
+<   TTD = (1600-c_pos)/velocity;
+<   ulTaskNotifyTake(pdTRUE, portMAX_DELAY);
+<   while (TTD > 4)
+<     delayMicroseconds(500000);
+<   LinAct_msg.buf[0]=1;
+<   Can0.write(LinAct_msg);         //Begin retraction of wheels
+< }
+< 
+< 
+< void lts (void* args){
+<   //Update  values of global variables braking_sep_1, braking_sep_2,braking_sep_3,braking_sep_4;
+<   //Compute braking_sep_avg
+< }
+< 
+< void brakeRetraction (void* args){
+<   ulTaskNotifyTake (pdTRUE, portMAX_DELAY);
+<   //send data pkt to reverse direction of the stepper motor and move it to 15mm at a constant frequency 
+< }
+< 
+< 
+799c866,921
+< 
+---
+>   #if I2CDEV_IMPLEMENTATION == I2CDEV_ARDUINO_WIRE
+>     Wire.begin();
+>   #elif I2CDEV_IMPLEMENTATION == I2CDEV_BUILTIN_FASTWIRE
+>     Fastwire::setup(400, true);
+>   #endif
+> 
+>   #if DEBUG_MODE
+>     Display.println(F("Initializing I2C devices..."));
+>   #endif
+> 
+>   mpu.initialize();
+> // verify connection
+>   Display.println("Testing device connections...");
+>   if(mpu.testConnection()){
+>     Display.println("MPU6050 connection successful");
+>   }
+>   else{
+>     Display.println("MPU6050 connection failed");
+>     initialise_status=0;
+>   }
+>   // wait for ready
+>   // load and configure the DMP
+>   
+>   Display.println("Initializing DMP..."); 
+>   devStatus = mpu.dmpInitialize();
+>   
+>   // supply your own gyro offsets here, scaled for min sensitivity
+>   mpu.setXGyroOffset(XGyroOffset);
+>   mpu.setYGyroOffset(YGyroOffset);
+>   mpu.setZGyroOffset(ZGyroOffset);
+>   mpu.setZAccelOffset(ZAccelOffset);
+>   mpu.setYAccelOffset(YAccelOffset);
+>   mpu.setXAccelOffset(XAccelOffset); // 1688 factory default for my test chip
+>   // make sure it worked (returns 0 if so)
+>   if (devStatus == 0) {
+>       // turn on the DMP, now that it's ready
+>       Display.println("Enabling DMP...");
+>       mpu.setDMPEnabled(true);
+>       // enable Arduino interrupt detection
+>       Display.println("Enabling interrupt detection (Arduino external interrupt 0)...");
+>       
+>       mpuIntStatus = mpu.getIntStatus();
+>       // set our DMP Ready flag so the main loop() function knows it's okay to use it
+>       Display.println("DMP ready! Waiting for first interrupt...");
+>       dmpReady = true;
+>       // get expected DMP packet size for later comparison
+>       packetSize = mpu.dmpGetFIFOPacketSize();
+>   } else {
+>       // ERROR!
+>       // 1 = initial memory load failed
+>       // 2 = DMP configuration updates failed
+>       // (if it's going to break, usually the code will be 1)
+>       Display.println("DMP Initialization failed (code ");
+>       Display.println(devStatus);
+>       initialise_status=0;
+>       }
+801a924,925
+> 
+> 
+827c951
+<     sys_state_change.len = 8;
+---
+>     sys_state_change.len = 1;
+856,876d979
+<     LinAct_msg.ext = 0;
+<     LinAct_msg.id = 0xA; //10
+<     LinAct_msg.len = 1;
+<     brake_msg.ext=0;
+<     brake_msg.id = 0xC; //12
+<     brake_msg.len = 8;
+<     lsd_msg.ext = 0;
+<     lsd_msg.id = 0xB; //11
+<     lsd_msg.len=8;
+< 
+< /*
+<      CAN_filter_t filter;
+<     filter.id=0x00001560;
+<     filter.flags.extended=0;
+<     filter.flags.remote=0;
+<     filter.flags.reserved=0;
+< 
+<     canListener1.attachMBHandler(0);
+<    Can0.setFilter(filter,0);
+<    Can0.setMask(0xFFFFFFFF,0);
+<    */
+921,991d1023
+< }
+< 
+< 
+< 
+< void brakingPID(void* args){
+<     float Kp, Ki, Kd;
+<     uint32_t local_position;
+<   uint32_t local_velocity;
+<   uint32_t desired_position;
+<   uint32_t desired_velocity;
+<     xSemaphoreTake( accMutex, portMAX_DELAY );
+<     local_velocity=global_velocity; 
+<     xSemaphoreGive( accMutex );
+< 
+<     ulTaskNotifyTake(pdTRUE, portMAX_DELAY);
+< 
+<   if((local_velocity>75)&&(local_velocity<=80)){
+<     Kp=3;
+<       Ki=0.1;
+<       Kd=0.01;    
+<   }
+<   else if((local_velocity>70)&&(local_velocity<=75)){
+<       Kp=3;
+<       Ki=0.1;
+<       Kd=0.01;    
+<   }
+< 
+<   else if((local_velocity>65)&&(local_velocity<=70)){
+<       Kp=3.5;
+<       Ki=0.2;
+<       Kd=0.01;    
+<   }
+<   
+<   else if((local_velocity>60)&&(local_velocity<=65)){
+<       Kp=3.5;
+<       Ki=0.3;
+<       Kd=0.01;    
+<   }
+< 
+<   else if((local_velocity>55)&&(local_velocity<=60)){
+<       Kp=3.7;
+<       Ki=0.35;
+<       Kd=0.01;    
+<   }
+< 
+<   else if((local_velocity>50)&&(local_velocity<=55)){
+<       Kp=4.5;
+<       Ki=0.45;
+<       Kd=0.01;    
+<   }
+< 
+<   else if((local_velocity>45)&&(local_velocity<=50)){
+<       Kp=4.8;
+<       Ki=0.48;
+<       Kd=0.01;    
+<   }
+< 
+<   else if((local_velocity>40)&&(local_velocity<=45)){
+<       Kp=5.6;
+<       Ki=0.55;
+<       Kd=0.01;    
+<   }
+< 
+<     else{
+<       xTaskNotifyGive(CANS);
+<     }
+<   
+<     while (braking_sep_avg > 11){
+<     //  x_err = (Kp*(des_velocity - v) + Ki*(des_distance - d) +Kd*(des_accelleration - a));
+<     vTaskDelay(pdMS_TO_TICKS(5));
+<   }

@@ -1,0 +1,40 @@
+/*================================
+        RANGE SLIDER STYLES
+=================================*/
+.range-container {
+  .range {  
+    width: calc(90%);
+    position: relative;
+    margin: 10px;
+    border: 0;
+    height: 3px;
+    background:  #37474F;
+    outline: none;
+    .ui-slider-handle {
+      position: absolute;
+      margin: -4px 0 0 -9px;
+      border-radius: 100%;
+      background: darken(#b8b8b8,10%);
+      border: 0;
+      height: 12px;
+      width: 12px;
+      outline: none;
+      cursor: pointer;
+    }
+    input.range-value {
+      right: 10px;
+      top: -25px;
+      max-width: 30px;
+      position: absolute;
+      font-size: 13px;
+      font-weight: bold;
+      color: darken(#b8b8b8,10%);
+      text-align: right;
+      box-shadow: none;
+      border: none;
+      border-bottom: 1px dotted darken(#b8b8b8,10%);
+      background: transparent;
+      outline: none;
+    }
+  }
+}

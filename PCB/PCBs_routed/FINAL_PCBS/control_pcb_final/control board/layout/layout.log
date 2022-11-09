@@ -1,0 +1,570 @@
+Tue Jul 11 12:50:30 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Tue Jul 11 12:52:48 Saved as file BACKUP1.MAX
+Tue Jul 11 12:52:48 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Tue Jul 11 12:52:50 UserDiv from Layout.INI for AutoECO: 60
+Tue Jul 11 12:52:50 Loaded file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Tue Jul 11 12:52:50 Loaded file E:\PCB\MIRCLE.LLB
+Tue Jul 11 12:52:50 Loaded file E:\PCB\INDUCTORS.LLB
+Tue Jul 11 12:52:50 Loaded file E:\PCB\TYM.LLB
+Tue Jul 11 12:52:50 Loaded file E:\PCB\RELAYS.LLB
+Tue Jul 11 12:52:50 Loaded file E:\PCB\SWAR.LLB
+Tue Jul 11 12:52:50 Loaded file E:\PCB\SWITCH.LLB
+Tue Jul 11 12:52:50 Loaded file E:\PCB\SMD.LLB
+Tue Jul 11 12:52:50 Loaded file E:\PCB\ME.LLB
+Tue Jul 11 12:52:50 Loaded file E:\PCB\DISPLAY.LLB
+Tue Jul 11 12:52:50 Loaded file E:\PCB\HEAT SINKS.LLB
+Tue Jul 11 12:52:51 Loaded file E:\PCB\CONNECTORS.LLB
+Tue Jul 11 12:52:51 Loaded file E:\PCB\TRANSISTORS.LLB
+Tue Jul 11 12:52:51 Loaded file E:\PCB\DIODES.LLB
+Tue Jul 11 12:52:51 Loaded file E:\PCB\CAPACITORS.LLB
+Tue Jul 11 12:52:51 Loaded file E:\PCB\RESISTORS.LLB
+Tue Jul 11 12:52:51 Loaded file E:\PCB\IC.LLB
+Tue Jul 11 12:52:51 Loaded file E:\PCB\DLLAYER.LLB
+Tue Jul 11 12:52:51 Loaded file E:\PCB\MYLIB.LLB
+Tue Jul 11 12:52:51 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\BCON100T.llb
+Tue Jul 11 12:52:51 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\BCON156T.llb
+Tue Jul 11 12:52:51 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\BGA.llb
+Tue Jul 11 12:52:51 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\CLCC.llb
+Tue Jul 11 12:52:51 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\DCON050T.llb
+Tue Jul 11 12:52:51 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\DCON085T.llb
+Tue Jul 11 12:52:51 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\DIMM050F.llb
+Tue Jul 11 12:52:51 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\DIMM050T.llb
+Tue Jul 11 12:52:51 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\DIN.llb
+Tue Jul 11 12:52:51 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\DIP100B.llb
+Tue Jul 11 12:52:51 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\DIP100T.llb
+Tue Jul 11 12:52:51 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\DSUBT.llb
+Tue Jul 11 12:52:51 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\DSUBT_HD.LLB
+Tue Jul 11 12:52:51 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\ECON100T.llb
+Tue Jul 11 12:52:51 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\FBUS.llb
+Tue Jul 11 12:52:51 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\ISA.llb
+Tue Jul 11 12:52:51 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\JUMPER.LLB
+Tue Jul 11 12:52:51 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\LAYOUT.llb
+Tue Jul 11 12:52:51 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\LCON100T.llb
+Tue Jul 11 12:52:52 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\PC104.llb
+Tue Jul 11 12:52:52 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\PCI.llb
+Tue Jul 11 12:52:52 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\PCON100T.llb
+Tue Jul 11 12:52:52 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\PCON156T.llb
+Tue Jul 11 12:52:52 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\PGA.llb
+Tue Jul 11 12:52:52 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\PLCC.llb
+Tue Jul 11 12:52:52 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\QUAD.llb
+Tue Jul 11 12:52:52 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\QUADB.llb
+Tue Jul 11 12:52:52 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\RELAY.llb
+Tue Jul 11 12:52:52 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\RF.llb
+Tue Jul 11 12:52:52 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\SBUS.llb
+Tue Jul 11 12:52:52 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\SIMM050F.llb
+Tue Jul 11 12:52:52 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\SIMM050T.llb
+Tue Jul 11 12:52:52 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\SIMM100F.llb
+Tue Jul 11 12:52:52 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\SIMM100T.llb
+Tue Jul 11 12:52:52 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\SIP.llb
+Tue Jul 11 12:52:52 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\SM.llb
+Tue Jul 11 12:52:52 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\SOG.llb
+Tue Jul 11 12:52:52 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\SOJ.llb
+Tue Jul 11 12:52:52 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\STIFF.llb
+Tue Jul 11 12:52:52 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\TELE.llb
+Tue Jul 11 12:52:52 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\TM_AXIAL.llb
+Tue Jul 11 12:52:52 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\TM_CAP_P.llb
+Tue Jul 11 12:52:52 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\TM_CYLND.llb
+Tue Jul 11 12:52:52 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\TM_DIODE.llb
+Tue Jul 11 12:52:52 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\TM_DISC.llb
+Tue Jul 11 12:52:52 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\TM_RAD.llb
+Tue Jul 11 12:52:52 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\TO.llb
+Tue Jul 11 12:52:52 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\TRAINING.LLB
+Tue Jul 11 12:52:52 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\VRES.llb
+Tue Jul 11 12:52:52 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\WCON100T.llb
+Tue Jul 11 12:52:52 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\XT.llb
+Tue Jul 11 12:52:52 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\ZIGZAG.llb
+Tue Jul 11 12:52:55 Loaded file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Tue Jul 11 12:52:55 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Tue Jul 11 12:52:55 Loaded file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Tue Jul 11 12:53:29 Loaded file C:\Program Files\OrCAD\Layout_Plus\data\template.imp
+Tue Jul 11 12:53:29 Loaded file C:\Program Files\OrCAD\Layout_Plus\data\template.imp
+Tue Jul 11 12:53:29 Loaded file C:\Program Files\OrCAD\Layout_Plus\data\template.imp
+Tue Jul 11 12:53:29 Loaded file C:\Program Files\OrCAD\Layout_Plus\data\template.imp
+Tue Jul 11 12:53:31 Loaded file C:\Program Files\OrCAD\Layout_Plus\data\template.imp
+Tue Jul 11 12:53:36 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Tue Jul 11 12:54:02 Saved as file BACKUP1.MAX
+Tue Jul 11 12:54:02 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Tue Jul 11 12:54:03 UserDiv from Layout.INI for AutoECO: 60
+Tue Jul 11 12:54:03 Loaded file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Tue Jul 11 12:54:03 Loaded file E:\PCB\MIRCLE.LLB
+Tue Jul 11 12:54:03 Loaded file E:\PCB\INDUCTORS.LLB
+Tue Jul 11 12:54:03 Loaded file E:\PCB\TYM.LLB
+Tue Jul 11 12:54:03 Loaded file E:\PCB\RELAYS.LLB
+Tue Jul 11 12:54:03 Loaded file E:\PCB\SWAR.LLB
+Tue Jul 11 12:54:03 Loaded file E:\PCB\SWITCH.LLB
+Tue Jul 11 12:54:03 Loaded file E:\PCB\SMD.LLB
+Tue Jul 11 12:54:03 Loaded file E:\PCB\ME.LLB
+Tue Jul 11 12:54:03 Loaded file E:\PCB\DISPLAY.LLB
+Tue Jul 11 12:54:03 Loaded file E:\PCB\HEAT SINKS.LLB
+Tue Jul 11 12:54:03 Loaded file E:\PCB\CONNECTORS.LLB
+Tue Jul 11 12:54:03 Loaded file E:\PCB\TRANSISTORS.LLB
+Tue Jul 11 12:54:03 Loaded file E:\PCB\DIODES.LLB
+Tue Jul 11 12:54:03 Loaded file E:\PCB\CAPACITORS.LLB
+Tue Jul 11 12:54:03 Loaded file E:\PCB\RESISTORS.LLB
+Tue Jul 11 12:54:03 Loaded file E:\PCB\IC.LLB
+Tue Jul 11 12:54:03 Loaded file E:\PCB\DLLAYER.LLB
+Tue Jul 11 12:54:03 Loaded file E:\PCB\MYLIB.LLB
+Tue Jul 11 12:54:03 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\BCON100T.llb
+Tue Jul 11 12:54:03 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\BCON156T.llb
+Tue Jul 11 12:54:03 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\BGA.llb
+Tue Jul 11 12:54:03 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\CLCC.llb
+Tue Jul 11 12:54:03 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\DCON050T.llb
+Tue Jul 11 12:54:03 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\DCON085T.llb
+Tue Jul 11 12:54:03 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\DIMM050F.llb
+Tue Jul 11 12:54:03 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\DIMM050T.llb
+Tue Jul 11 12:54:03 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\DIN.llb
+Tue Jul 11 12:54:03 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\DIP100B.llb
+Tue Jul 11 12:54:03 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\DIP100T.llb
+Tue Jul 11 12:54:03 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\DSUBT.llb
+Tue Jul 11 12:54:03 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\DSUBT_HD.LLB
+Tue Jul 11 12:54:03 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\ECON100T.llb
+Tue Jul 11 12:54:03 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\FBUS.llb
+Tue Jul 11 12:54:03 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\ISA.llb
+Tue Jul 11 12:54:03 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\JUMPER.LLB
+Tue Jul 11 12:54:03 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\LAYOUT.llb
+Tue Jul 11 12:54:03 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\LCON100T.llb
+Tue Jul 11 12:54:03 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\PC104.llb
+Tue Jul 11 12:54:03 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\PCI.llb
+Tue Jul 11 12:54:03 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\PCON100T.llb
+Tue Jul 11 12:54:03 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\PCON156T.llb
+Tue Jul 11 12:54:03 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\PGA.llb
+Tue Jul 11 12:54:03 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\PLCC.llb
+Tue Jul 11 12:54:03 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\QUAD.llb
+Tue Jul 11 12:54:03 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\QUADB.llb
+Tue Jul 11 12:54:03 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\RELAY.llb
+Tue Jul 11 12:54:03 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\RF.llb
+Tue Jul 11 12:54:03 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\SBUS.llb
+Tue Jul 11 12:54:03 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\SIMM050F.llb
+Tue Jul 11 12:54:03 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\SIMM050T.llb
+Tue Jul 11 12:54:03 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\SIMM100F.llb
+Tue Jul 11 12:54:03 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\SIMM100T.llb
+Tue Jul 11 12:54:03 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\SIP.llb
+Tue Jul 11 12:54:03 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\SM.llb
+Tue Jul 11 12:54:03 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\SOG.llb
+Tue Jul 11 12:54:03 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\SOJ.llb
+Tue Jul 11 12:54:03 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\STIFF.llb
+Tue Jul 11 12:54:03 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\TELE.llb
+Tue Jul 11 12:54:03 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\TM_AXIAL.llb
+Tue Jul 11 12:54:03 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\TM_CAP_P.llb
+Tue Jul 11 12:54:03 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\TM_CYLND.llb
+Tue Jul 11 12:54:03 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\TM_DIODE.llb
+Tue Jul 11 12:54:03 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\TM_DISC.llb
+Tue Jul 11 12:54:03 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\TM_RAD.llb
+Tue Jul 11 12:54:04 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\TO.llb
+Tue Jul 11 12:54:04 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\TRAINING.LLB
+Tue Jul 11 12:54:04 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\VRES.llb
+Tue Jul 11 12:54:04 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\WCON100T.llb
+Tue Jul 11 12:54:04 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\XT.llb
+Tue Jul 11 12:54:04 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\ZIGZAG.llb
+Tue Jul 11 12:54:04 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Tue Jul 11 12:54:04 Loaded file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Tue Jul 11 12:54:20 Loaded file C:\Program Files\OrCAD\Layout_Plus\data\template.imp
+Tue Jul 11 12:54:20 Loaded file C:\Program Files\OrCAD\Layout_Plus\data\template.imp
+Tue Jul 11 12:54:20 Loaded file C:\Program Files\OrCAD\Layout_Plus\data\template.imp
+Tue Jul 11 12:54:20 Loaded file C:\Program Files\OrCAD\Layout_Plus\data\template.imp
+Tue Jul 11 12:54:24 Loaded file C:\Program Files\OrCAD\Layout_Plus\data\template.imp
+Tue Jul 11 12:55:03 Loaded file C:\Program Files\OrCAD\Layout_Plus\data\template.imp
+Tue Jul 11 12:55:03 Loaded file C:\Program Files\OrCAD\Layout_Plus\data\template.imp
+Tue Jul 11 12:55:03 Loaded file C:\Program Files\OrCAD\Layout_Plus\data\template.imp
+Tue Jul 11 12:55:03 Loaded file C:\Program Files\OrCAD\Layout_Plus\data\template.imp
+Tue Jul 11 12:55:05 Loaded file E:\PCB\RELAYS.LLB
+Tue Jul 11 12:55:05 Loaded file E:\PCB\RESISTORS.LLB
+Tue Jul 11 12:55:10 Loaded file C:\Program Files\OrCAD\Layout_Plus\data\template.imp
+Tue Jul 11 13:00:20 Loaded file C:\Program Files\OrCAD\Layout_Plus\data\template.imp
+Tue Jul 11 13:00:20 Loaded file C:\Program Files\OrCAD\Layout_Plus\data\template.imp
+Tue Jul 11 13:00:21 Loaded file C:\Program Files\OrCAD\Layout_Plus\data\template.imp
+Tue Jul 11 13:00:21 Loaded file C:\Program Files\OrCAD\Layout_Plus\data\template.imp
+Tue Jul 11 13:00:22 Loaded file C:\Program Files\OrCAD\Layout_Plus\data\template.imp
+Tue Jul 11 13:02:04 Saved as file BACKUP1.MAX
+Tue Jul 11 13:13:04 Saved as file BACKUP1.MAX
+Tue Jul 11 13:15:27 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Tue Jul 11 13:16:44 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Tue Jul 11 13:18:38 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Tue Jul 11 13:19:40 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Tue Jul 11 13:24:04 Saved as file BACKUP1.MAX
+Tue Jul 11 13:30:25 Saved as file BACKUP1.MAX
+Tue Jul 11 13:30:25 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Tue Jul 11 13:30:26 UserDiv from Layout.INI for AutoECO: 60
+Tue Jul 11 13:30:26 Loaded file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Tue Jul 11 13:30:26 Loaded file E:\PCB\MIRCLE.LLB
+Tue Jul 11 13:30:26 Loaded file E:\PCB\INDUCTORS.LLB
+Tue Jul 11 13:30:26 Loaded file E:\PCB\TYM.LLB
+Tue Jul 11 13:30:26 Loaded file E:\PCB\RELAYS.LLB
+Tue Jul 11 13:30:26 Loaded file E:\PCB\SWAR.LLB
+Tue Jul 11 13:30:26 Loaded file E:\PCB\SWITCH.LLB
+Tue Jul 11 13:30:26 Loaded file E:\PCB\SMD.LLB
+Tue Jul 11 13:30:26 Loaded file E:\PCB\ME.LLB
+Tue Jul 11 13:30:26 Loaded file E:\PCB\DISPLAY.LLB
+Tue Jul 11 13:30:26 Loaded file E:\PCB\HEAT SINKS.LLB
+Tue Jul 11 13:30:26 Loaded file E:\PCB\CONNECTORS.LLB
+Tue Jul 11 13:30:26 Loaded file E:\PCB\TRANSISTORS.LLB
+Tue Jul 11 13:30:26 Loaded file E:\PCB\DIODES.LLB
+Tue Jul 11 13:30:26 Loaded file E:\PCB\CAPACITORS.LLB
+Tue Jul 11 13:30:26 Loaded file E:\PCB\RESISTORS.LLB
+Tue Jul 11 13:30:26 Loaded file E:\PCB\IC.LLB
+Tue Jul 11 13:30:26 Loaded file E:\PCB\DLLAYER.LLB
+Tue Jul 11 13:30:26 Loaded file E:\PCB\MYLIB.LLB
+Tue Jul 11 13:30:26 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\BCON100T.llb
+Tue Jul 11 13:30:26 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\BCON156T.llb
+Tue Jul 11 13:30:26 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\BGA.llb
+Tue Jul 11 13:30:26 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\CLCC.llb
+Tue Jul 11 13:30:26 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\DCON050T.llb
+Tue Jul 11 13:30:26 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\DCON085T.llb
+Tue Jul 11 13:30:26 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\DIMM050F.llb
+Tue Jul 11 13:30:26 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\DIMM050T.llb
+Tue Jul 11 13:30:26 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\DIN.llb
+Tue Jul 11 13:30:26 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\DIP100B.llb
+Tue Jul 11 13:30:26 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\DIP100T.llb
+Tue Jul 11 13:30:26 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\DSUBT.llb
+Tue Jul 11 13:30:26 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\DSUBT_HD.LLB
+Tue Jul 11 13:30:26 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\ECON100T.llb
+Tue Jul 11 13:30:26 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\FBUS.llb
+Tue Jul 11 13:30:26 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\ISA.llb
+Tue Jul 11 13:30:26 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\JUMPER.LLB
+Tue Jul 11 13:30:26 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\LAYOUT.llb
+Tue Jul 11 13:30:26 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\LCON100T.llb
+Tue Jul 11 13:30:26 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\PC104.llb
+Tue Jul 11 13:30:26 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\PCI.llb
+Tue Jul 11 13:30:26 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\PCON100T.llb
+Tue Jul 11 13:30:26 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\PCON156T.llb
+Tue Jul 11 13:30:26 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\PGA.llb
+Tue Jul 11 13:30:26 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\PLCC.llb
+Tue Jul 11 13:30:27 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\QUAD.llb
+Tue Jul 11 13:30:27 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\QUADB.llb
+Tue Jul 11 13:30:27 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\RELAY.llb
+Tue Jul 11 13:30:27 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\RF.llb
+Tue Jul 11 13:30:27 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\SBUS.llb
+Tue Jul 11 13:30:27 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\SIMM050F.llb
+Tue Jul 11 13:30:27 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\SIMM050T.llb
+Tue Jul 11 13:30:27 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\SIMM100F.llb
+Tue Jul 11 13:30:27 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\SIMM100T.llb
+Tue Jul 11 13:30:27 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\SIP.llb
+Tue Jul 11 13:30:27 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\SM.llb
+Tue Jul 11 13:30:27 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\SOG.llb
+Tue Jul 11 13:30:27 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\SOJ.llb
+Tue Jul 11 13:30:27 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\STIFF.llb
+Tue Jul 11 13:30:27 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\TELE.llb
+Tue Jul 11 13:30:27 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\TM_AXIAL.llb
+Tue Jul 11 13:30:27 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\TM_CAP_P.llb
+Tue Jul 11 13:30:27 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\TM_CYLND.llb
+Tue Jul 11 13:30:27 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\TM_DIODE.llb
+Tue Jul 11 13:30:27 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\TM_DISC.llb
+Tue Jul 11 13:30:27 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\TM_RAD.llb
+Tue Jul 11 13:30:27 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\TO.llb
+Tue Jul 11 13:30:27 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\TRAINING.LLB
+Tue Jul 11 13:30:27 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\VRES.llb
+Tue Jul 11 13:30:27 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\WCON100T.llb
+Tue Jul 11 13:30:27 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\XT.llb
+Tue Jul 11 13:30:27 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\ZIGZAG.llb
+Tue Jul 11 13:30:28 Loaded file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Tue Jul 11 13:30:28 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Tue Jul 11 13:30:28 Loaded file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Tue Jul 11 13:30:35 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Tue Jul 11 13:31:00 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Tue Jul 11 13:31:16 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Tue Jul 11 18:16:04 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Tue Jul 11 18:16:29 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Tue Jul 11 18:16:40 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Tue Jul 11 18:16:58 Saved as file backanno.max
+Tue Jul 11 18:17:02 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Tue Jul 11 18:17:04 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Tue Jul 11 18:19:05 Saved as file BACKUP1.MAX
+Tue Jul 11 18:19:05 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Tue Jul 11 18:19:06 UserDiv from Layout.INI for AutoECO: 60
+Tue Jul 11 18:19:06 Loaded file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Tue Jul 11 18:19:06 Loaded file E:\PCB\MIRCLE.LLB
+Tue Jul 11 18:19:06 Loaded file E:\PCB\INDUCTORS.LLB
+Tue Jul 11 18:19:06 Loaded file E:\PCB\TYM.LLB
+Tue Jul 11 18:19:06 Loaded file E:\PCB\RELAYS.LLB
+Tue Jul 11 18:19:06 Loaded file E:\PCB\SWAR.LLB
+Tue Jul 11 18:19:06 Loaded file E:\PCB\SWITCH.LLB
+Tue Jul 11 18:19:06 Loaded file E:\PCB\SMD.LLB
+Tue Jul 11 18:19:06 Loaded file E:\PCB\ME.LLB
+Tue Jul 11 18:19:06 Loaded file E:\PCB\DISPLAY.LLB
+Tue Jul 11 18:19:06 Loaded file E:\PCB\HEAT SINKS.LLB
+Tue Jul 11 18:19:06 Loaded file E:\PCB\CONNECTORS.LLB
+Tue Jul 11 18:19:06 Loaded file E:\PCB\TRANSISTORS.LLB
+Tue Jul 11 18:19:06 Loaded file E:\PCB\DIODES.LLB
+Tue Jul 11 18:19:06 Loaded file E:\PCB\CAPACITORS.LLB
+Tue Jul 11 18:19:06 Loaded file E:\PCB\RESISTORS.LLB
+Tue Jul 11 18:19:06 Loaded file E:\PCB\IC.LLB
+Tue Jul 11 18:19:06 Loaded file E:\PCB\DLLAYER.LLB
+Tue Jul 11 18:19:06 Loaded file E:\PCB\MYLIB.LLB
+Tue Jul 11 18:19:06 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\BCON100T.llb
+Tue Jul 11 18:19:06 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\BCON156T.llb
+Tue Jul 11 18:19:06 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\BGA.llb
+Tue Jul 11 18:19:06 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\CLCC.llb
+Tue Jul 11 18:19:06 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\DCON050T.llb
+Tue Jul 11 18:19:06 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\DCON085T.llb
+Tue Jul 11 18:19:06 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\DIMM050F.llb
+Tue Jul 11 18:19:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\DIMM050T.llb
+Tue Jul 11 18:19:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\DIN.llb
+Tue Jul 11 18:19:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\DIP100B.llb
+Tue Jul 11 18:19:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\DIP100T.llb
+Tue Jul 11 18:19:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\DSUBT.llb
+Tue Jul 11 18:19:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\DSUBT_HD.LLB
+Tue Jul 11 18:19:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\ECON100T.llb
+Tue Jul 11 18:19:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\FBUS.llb
+Tue Jul 11 18:19:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\ISA.llb
+Tue Jul 11 18:19:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\JUMPER.LLB
+Tue Jul 11 18:19:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\LAYOUT.llb
+Tue Jul 11 18:19:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\LCON100T.llb
+Tue Jul 11 18:19:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\PC104.llb
+Tue Jul 11 18:19:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\PCI.llb
+Tue Jul 11 18:19:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\PCON100T.llb
+Tue Jul 11 18:19:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\PCON156T.llb
+Tue Jul 11 18:19:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\PGA.llb
+Tue Jul 11 18:19:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\PLCC.llb
+Tue Jul 11 18:19:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\QUAD.llb
+Tue Jul 11 18:19:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\QUADB.llb
+Tue Jul 11 18:19:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\RELAY.llb
+Tue Jul 11 18:19:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\RF.llb
+Tue Jul 11 18:19:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\SBUS.llb
+Tue Jul 11 18:19:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\SIMM050F.llb
+Tue Jul 11 18:19:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\SIMM050T.llb
+Tue Jul 11 18:19:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\SIMM100F.llb
+Tue Jul 11 18:19:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\SIMM100T.llb
+Tue Jul 11 18:19:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\SIP.llb
+Tue Jul 11 18:19:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\SM.llb
+Tue Jul 11 18:19:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\SOG.llb
+Tue Jul 11 18:19:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\SOJ.llb
+Tue Jul 11 18:19:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\STIFF.llb
+Tue Jul 11 18:19:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\TELE.llb
+Tue Jul 11 18:19:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\TM_AXIAL.llb
+Tue Jul 11 18:19:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\TM_CAP_P.llb
+Tue Jul 11 18:19:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\TM_CYLND.llb
+Tue Jul 11 18:19:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\TM_DIODE.llb
+Tue Jul 11 18:19:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\TM_DISC.llb
+Tue Jul 11 18:19:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\TM_RAD.llb
+Tue Jul 11 18:19:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\TO.llb
+Tue Jul 11 18:19:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\TRAINING.LLB
+Tue Jul 11 18:19:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\VRES.llb
+Tue Jul 11 18:19:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\WCON100T.llb
+Tue Jul 11 18:19:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\XT.llb
+Tue Jul 11 18:19:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\ZIGZAG.llb
+Tue Jul 11 18:19:07 Loaded file E:\PCB\MYLIB.LLB
+Tue Jul 11 18:19:08 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Tue Jul 11 18:19:08 Loaded file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Tue Jul 11 18:21:22 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Tue Jul 11 18:21:50 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Tue Jul 11 18:22:00 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Wed Jul 12 20:37:04 Saved as file BACKUP1.MAX
+Wed Jul 12 20:37:04 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Wed Jul 12 20:37:06 UserDiv from Layout.INI for AutoECO: 60
+Wed Jul 12 20:37:06 Loaded file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Wed Jul 12 20:37:06 Loaded file E:\PCB\MIRCLE.LLB
+Wed Jul 12 20:37:06 Loaded file E:\PCB\INDUCTORS.LLB
+Wed Jul 12 20:37:06 Loaded file E:\PCB\TYM.LLB
+Wed Jul 12 20:37:06 Loaded file E:\PCB\RELAYS.LLB
+Wed Jul 12 20:37:06 Loaded file E:\PCB\SWAR.LLB
+Wed Jul 12 20:37:06 Loaded file E:\PCB\SWITCH.LLB
+Wed Jul 12 20:37:06 Loaded file E:\PCB\SMD.LLB
+Wed Jul 12 20:37:06 Loaded file E:\PCB\ME.LLB
+Wed Jul 12 20:37:06 Loaded file E:\PCB\DISPLAY.LLB
+Wed Jul 12 20:37:06 Loaded file E:\PCB\HEAT SINKS.LLB
+Wed Jul 12 20:37:06 Loaded file E:\PCB\CONNECTORS.LLB
+Wed Jul 12 20:37:06 Loaded file E:\PCB\TRANSISTORS.LLB
+Wed Jul 12 20:37:06 Loaded file E:\PCB\DIODES.LLB
+Wed Jul 12 20:37:06 Loaded file E:\PCB\CAPACITORS.LLB
+Wed Jul 12 20:37:06 Loaded file E:\PCB\RESISTORS.LLB
+Wed Jul 12 20:37:06 Loaded file E:\PCB\IC.LLB
+Wed Jul 12 20:37:06 Loaded file E:\PCB\DLLAYER.LLB
+Wed Jul 12 20:37:06 Loaded file E:\PCB\MYLIB.LLB
+Wed Jul 12 20:37:06 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\BCON100T.llb
+Wed Jul 12 20:37:06 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\BCON156T.llb
+Wed Jul 12 20:37:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\BGA.llb
+Wed Jul 12 20:37:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\CLCC.llb
+Wed Jul 12 20:37:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\DCON050T.llb
+Wed Jul 12 20:37:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\DCON085T.llb
+Wed Jul 12 20:37:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\DIMM050F.llb
+Wed Jul 12 20:37:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\DIMM050T.llb
+Wed Jul 12 20:37:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\DIN.llb
+Wed Jul 12 20:37:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\DIP100B.llb
+Wed Jul 12 20:37:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\DIP100T.llb
+Wed Jul 12 20:37:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\DSUBT.llb
+Wed Jul 12 20:37:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\DSUBT_HD.LLB
+Wed Jul 12 20:37:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\ECON100T.llb
+Wed Jul 12 20:37:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\FBUS.llb
+Wed Jul 12 20:37:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\ISA.llb
+Wed Jul 12 20:37:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\JUMPER.LLB
+Wed Jul 12 20:37:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\LAYOUT.llb
+Wed Jul 12 20:37:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\LCON100T.llb
+Wed Jul 12 20:37:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\PC104.llb
+Wed Jul 12 20:37:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\PCI.llb
+Wed Jul 12 20:37:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\PCON100T.llb
+Wed Jul 12 20:37:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\PCON156T.llb
+Wed Jul 12 20:37:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\PGA.llb
+Wed Jul 12 20:37:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\PLCC.llb
+Wed Jul 12 20:37:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\QUAD.llb
+Wed Jul 12 20:37:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\QUADB.llb
+Wed Jul 12 20:37:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\RELAY.llb
+Wed Jul 12 20:37:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\RF.llb
+Wed Jul 12 20:37:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\SBUS.llb
+Wed Jul 12 20:37:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\SIMM050F.llb
+Wed Jul 12 20:37:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\SIMM050T.llb
+Wed Jul 12 20:37:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\SIMM100F.llb
+Wed Jul 12 20:37:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\SIMM100T.llb
+Wed Jul 12 20:37:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\SIP.llb
+Wed Jul 12 20:37:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\SM.llb
+Wed Jul 12 20:37:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\SOG.llb
+Wed Jul 12 20:37:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\SOJ.llb
+Wed Jul 12 20:37:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\STIFF.llb
+Wed Jul 12 20:37:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\TELE.llb
+Wed Jul 12 20:37:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\TM_AXIAL.llb
+Wed Jul 12 20:37:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\TM_CAP_P.llb
+Wed Jul 12 20:37:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\TM_CYLND.llb
+Wed Jul 12 20:37:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\TM_DIODE.llb
+Wed Jul 12 20:37:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\TM_DISC.llb
+Wed Jul 12 20:37:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\TM_RAD.llb
+Wed Jul 12 20:37:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\TO.llb
+Wed Jul 12 20:37:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\TRAINING.LLB
+Wed Jul 12 20:37:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\VRES.llb
+Wed Jul 12 20:37:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\WCON100T.llb
+Wed Jul 12 20:37:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\XT.llb
+Wed Jul 12 20:37:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\ZIGZAG.llb
+Wed Jul 12 20:37:08 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Wed Jul 12 20:37:08 Loaded file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Wed Jul 12 20:42:21 Loaded file C:\Program Files\OrCAD\Layout_Plus\data\template.imp
+Wed Jul 12 20:42:21 Loaded file C:\Program Files\OrCAD\Layout_Plus\data\template.imp
+Wed Jul 12 20:42:21 Loaded file C:\Program Files\OrCAD\Layout_Plus\data\template.imp
+Wed Jul 12 20:42:21 Loaded file C:\Program Files\OrCAD\Layout_Plus\data\template.imp
+Wed Jul 12 20:42:24 Loaded file C:\Program Files\OrCAD\Layout_Plus\data\template.imp
+Wed Jul 12 20:43:04 Loaded file C:\Program Files\OrCAD\Layout_Plus\data\template.imp
+Wed Jul 12 20:43:04 Loaded file C:\Program Files\OrCAD\Layout_Plus\data\template.imp
+Wed Jul 12 20:43:04 Loaded file C:\Program Files\OrCAD\Layout_Plus\data\template.imp
+Wed Jul 12 20:43:04 Loaded file C:\Program Files\OrCAD\Layout_Plus\data\template.imp
+Wed Jul 12 20:43:07 Loaded file C:\Program Files\OrCAD\Layout_Plus\data\template.imp
+Wed Jul 12 20:44:45 Loaded file C:\Program Files\OrCAD\Layout_Plus\data\template.imp
+Wed Jul 12 20:44:45 Loaded file C:\Program Files\OrCAD\Layout_Plus\data\template.imp
+Wed Jul 12 20:44:45 Loaded file C:\Program Files\OrCAD\Layout_Plus\data\template.imp
+Wed Jul 12 20:44:45 Loaded file C:\Program Files\OrCAD\Layout_Plus\data\template.imp
+Wed Jul 12 20:44:48 Loaded file C:\Program Files\OrCAD\Layout_Plus\data\template.imp
+Wed Jul 12 20:44:54 Loaded file C:\Program Files\OrCAD\Layout_Plus\data\template.imp
+Wed Jul 12 20:44:54 Loaded file C:\Program Files\OrCAD\Layout_Plus\data\template.imp
+Wed Jul 12 20:44:54 Loaded file C:\Program Files\OrCAD\Layout_Plus\data\template.imp
+Wed Jul 12 20:44:54 Loaded file C:\Program Files\OrCAD\Layout_Plus\data\template.imp
+Wed Jul 12 20:44:56 Loaded file C:\Program Files\OrCAD\Layout_Plus\data\template.imp
+Wed Jul 12 20:45:02 Loaded file C:\Program Files\OrCAD\Layout_Plus\data\template.imp
+Wed Jul 12 20:45:02 Loaded file C:\Program Files\OrCAD\Layout_Plus\data\template.imp
+Wed Jul 12 20:45:03 Loaded file C:\Program Files\OrCAD\Layout_Plus\data\template.imp
+Wed Jul 12 20:45:03 Loaded file C:\Program Files\OrCAD\Layout_Plus\data\template.imp
+Wed Jul 12 20:45:05 Loaded file C:\Program Files\OrCAD\Layout_Plus\data\template.imp
+Wed Jul 12 20:48:03 Saved as file BACKUP1.MAX
+Wed Jul 12 20:52:01 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Wed Jul 12 20:59:03 Saved as file BACKUP1.MAX
+Wed Jul 12 20:59:33 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Wed Jul 12 21:00:25 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Wed Jul 12 21:00:56 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Wed Jul 12 21:01:59 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Wed Jul 12 21:02:46 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Wed Jul 12 21:03:36 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Wed Jul 12 21:03:55 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Wed Jul 12 21:04:13 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Wed Jul 12 21:05:21 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Wed Jul 12 21:06:19 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Thu Jul 13 01:42:28 Loaded file C:\Program Files\OrCAD\Layout_Plus\data\template.imp
+Thu Jul 13 01:42:28 Loaded file C:\Program Files\OrCAD\Layout_Plus\data\template.imp
+Thu Jul 13 01:42:28 Loaded file C:\Program Files\OrCAD\Layout_Plus\data\template.imp
+Thu Jul 13 01:42:28 Loaded file C:\Program Files\OrCAD\Layout_Plus\data\template.imp
+Thu Jul 13 01:42:29 Loaded file E:\PCB\MIRCLE.LLB
+Thu Jul 13 01:42:33 Loaded file C:\Program Files\OrCAD\Layout_Plus\data\template.imp
+Thu Jul 13 01:42:37 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Thu Jul 13 01:43:20 Saved as file BACKUP1.MAX
+Thu Jul 13 01:43:20 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Thu Jul 13 01:43:20 UserDiv from Layout.INI for AutoECO: 60
+Thu Jul 13 01:43:20 Loaded file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Thu Jul 13 01:43:20 Loaded file E:\PCB\MIRCLE.LLB
+Thu Jul 13 01:43:20 Loaded file E:\PCB\INDUCTORS.LLB
+Thu Jul 13 01:43:20 Loaded file E:\PCB\TYM.LLB
+Thu Jul 13 01:43:20 Loaded file E:\PCB\RELAYS.LLB
+Thu Jul 13 01:43:21 Loaded file E:\PCB\SWAR.LLB
+Thu Jul 13 01:43:21 Loaded file E:\PCB\SWITCH.LLB
+Thu Jul 13 01:43:21 Loaded file E:\PCB\SMD.LLB
+Thu Jul 13 01:43:21 Loaded file E:\PCB\ME.LLB
+Thu Jul 13 01:43:21 Loaded file E:\PCB\DISPLAY.LLB
+Thu Jul 13 01:43:21 Loaded file E:\PCB\HEAT SINKS.LLB
+Thu Jul 13 01:43:21 Loaded file E:\PCB\CONNECTORS.LLB
+Thu Jul 13 01:43:21 Loaded file E:\PCB\TRANSISTORS.LLB
+Thu Jul 13 01:43:21 Loaded file E:\PCB\DIODES.LLB
+Thu Jul 13 01:43:21 Loaded file E:\PCB\CAPACITORS.LLB
+Thu Jul 13 01:43:21 Loaded file E:\PCB\RESISTORS.LLB
+Thu Jul 13 01:43:21 Loaded file E:\PCB\IC.LLB
+Thu Jul 13 01:43:21 Loaded file E:\PCB\DLLAYER.LLB
+Thu Jul 13 01:43:21 Loaded file E:\PCB\MYLIB.LLB
+Thu Jul 13 01:43:21 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\BCON100T.llb
+Thu Jul 13 01:43:21 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\BCON156T.llb
+Thu Jul 13 01:43:21 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\BGA.llb
+Thu Jul 13 01:43:21 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\CLCC.llb
+Thu Jul 13 01:43:21 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\DCON050T.llb
+Thu Jul 13 01:43:21 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\DCON085T.llb
+Thu Jul 13 01:43:21 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\DIMM050F.llb
+Thu Jul 13 01:43:21 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\DIMM050T.llb
+Thu Jul 13 01:43:21 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\DIN.llb
+Thu Jul 13 01:43:21 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\DIP100B.llb
+Thu Jul 13 01:43:21 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\DIP100T.llb
+Thu Jul 13 01:43:21 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\DSUBT.llb
+Thu Jul 13 01:43:21 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\DSUBT_HD.LLB
+Thu Jul 13 01:43:21 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\ECON100T.llb
+Thu Jul 13 01:43:21 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\FBUS.llb
+Thu Jul 13 01:43:21 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\ISA.llb
+Thu Jul 13 01:43:21 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\JUMPER.LLB
+Thu Jul 13 01:43:21 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\LAYOUT.llb
+Thu Jul 13 01:43:21 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\LCON100T.llb
+Thu Jul 13 01:43:21 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\PC104.llb
+Thu Jul 13 01:43:21 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\PCI.llb
+Thu Jul 13 01:43:21 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\PCON100T.llb
+Thu Jul 13 01:43:21 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\PCON156T.llb
+Thu Jul 13 01:43:21 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\PGA.llb
+Thu Jul 13 01:43:21 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\PLCC.llb
+Thu Jul 13 01:43:21 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\QUAD.llb
+Thu Jul 13 01:43:21 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\QUADB.llb
+Thu Jul 13 01:43:21 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\RELAY.llb
+Thu Jul 13 01:43:21 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\RF.llb
+Thu Jul 13 01:43:21 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\SBUS.llb
+Thu Jul 13 01:43:21 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\SIMM050F.llb
+Thu Jul 13 01:43:21 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\SIMM050T.llb
+Thu Jul 13 01:43:21 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\SIMM100F.llb
+Thu Jul 13 01:43:21 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\SIMM100T.llb
+Thu Jul 13 01:43:21 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\SIP.llb
+Thu Jul 13 01:43:21 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\SM.llb
+Thu Jul 13 01:43:21 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\SOG.llb
+Thu Jul 13 01:43:21 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\SOJ.llb
+Thu Jul 13 01:43:21 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\STIFF.llb
+Thu Jul 13 01:43:21 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\TELE.llb
+Thu Jul 13 01:43:21 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\TM_AXIAL.llb
+Thu Jul 13 01:43:21 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\TM_CAP_P.llb
+Thu Jul 13 01:43:21 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\TM_CYLND.llb
+Thu Jul 13 01:43:21 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\TM_DIODE.llb
+Thu Jul 13 01:43:21 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\TM_DISC.llb
+Thu Jul 13 01:43:21 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\TM_RAD.llb
+Thu Jul 13 01:43:21 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\TO.llb
+Thu Jul 13 01:43:21 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\TRAINING.LLB
+Thu Jul 13 01:43:21 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\VRES.llb
+Thu Jul 13 01:43:21 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\WCON100T.llb
+Thu Jul 13 01:43:21 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\XT.llb
+Thu Jul 13 01:43:21 Loaded file C:\Program Files\OrCAD\Layout_Plus\library\ZIGZAG.llb
+Thu Jul 13 01:43:22 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Thu Jul 13 01:43:22 Loaded file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Thu Jul 13 01:44:06 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Thu Jul 13 01:44:24 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Thu Jul 13 01:44:41 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Thu Jul 13 01:44:45 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Thu Jul 13 01:45:03 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Thu Jul 13 01:47:46 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Thu Jul 13 01:47:54 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Thu Jul 13 01:47:56 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Thu Jul 13 01:48:12 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Thu Jul 13 01:48:25 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Thu Jul 13 01:48:31 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Thu Jul 13 01:48:36 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Thu Jul 13 01:48:56 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Thu Jul 13 01:48:58 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Thu Jul 13 01:49:14 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Thu Jul 13 01:49:18 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Thu Jul 13 01:49:21 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Thu Jul 13 01:49:48 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Thu Jul 13 01:50:36 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Thu Jul 13 01:51:02 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Thu Jul 13 01:51:04 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Thu Jul 13 01:51:30 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX
+Thu Jul 13 01:51:36 Saved as file E:\PCB\MIRACLE\PCBS\CONTROL BOARD\LAYOUT\BOARD.MAX

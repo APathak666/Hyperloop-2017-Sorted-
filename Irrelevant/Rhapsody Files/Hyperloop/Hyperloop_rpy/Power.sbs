@@ -1,0 +1,144 @@
+I-Logix-RPY-Archive version 8.13.0 C++ 9794446
+{ ISubsystem 
+	- _id = GUID 2def51f8-4952-4ce4-8578-1c89f94e2875;
+	- _myState = 8192;
+	- _name = "Power";
+	- _modifiedTimeWeak = 2.14.2017::16:54:11;
+	- _theMainDiagram = { IHandle 
+		- _m2Class = "IDiagram";
+		- _filename = "";
+		- _subsystem = "";
+		- _class = "";
+		- _name = "LogicalView";
+		- _id = GUID 64182b97-ecdb-4e84-9603-d0436d63f6cc;
+	}
+	- _lastID = 4;
+	- Declaratives = { IRPYRawContainer 
+		- size = 3;
+		- value = 
+		{ INode 
+			- _id = GUID 470791d3-a1b9-464b-a24a-5293fbe55b1e;
+			- _name = "Teensy36";
+			- _modifiedTimeWeak = 2.14.2017::16:52:16;
+		}
+		{ IInformationFlow 
+			- _id = GUID 6ee87424-79b0-4c15-844b-78e0cf0471eb;
+			- _myState = 2048;
+			- _name = "Teensy36_Teensy36";
+			- _modifiedTimeWeak = 1.2.1990::0:0:0;
+			- Conveyed = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IInformationItem";
+					- _id = GUID 0bbeea03-066f-42b3-a9fa-774bb7e2ea7c;
+				}
+			}
+			- end1_ = { IHandle 
+				- _m2Class = "INode";
+				- _id = GUID 470791d3-a1b9-464b-a24a-5293fbe55b1e;
+			}
+			- end2_ = { IHandle 
+				- _m2Class = "INode";
+				- _filename = "Navigation.sbs";
+				- _subsystem = "Navigation";
+				- _class = "";
+				- _name = "Teensy36";
+				- _id = GUID 6d3ed68c-db7a-4f30-b81f-faebde43f755;
+			}
+			- direction_ = toEnd2;
+		}
+		{ IInformationItem 
+			- _id = GUID 0bbeea03-066f-42b3-a9fa-774bb7e2ea7c;
+			- _myState = 8192;
+			- _name = "CAN";
+			- _modifiedTimeWeak = 1.2.1990::0:0:0;
+		}
+	}
+	- weakCGTime = 2.14.2017::16:54:11;
+	- strongCGTime = 2.14.2017::16:52:16;
+	- _defaultComposite = GUID d90b948c-d3c6-49c8-8f51-554e7e42bc03;
+	- _eventsBaseID = -1;
+	- Classes = { IRPYRawContainer 
+		- size = 4;
+		- value = 
+		{ IClass 
+			- _id = GUID d90b948c-d3c6-49c8-8f51-554e7e42bc03;
+			- _myState = 40960;
+			- _name = "TopLevel";
+			- _modifiedTimeWeak = 2.13.2017::14:54:38;
+			- weakCGTime = 2.13.2017::14:54:38;
+			- strongCGTime = 2.12.2017::16:21:12;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID d072f1fa-cebf-4f66-b1cd-3b739c20ae22;
+			- _myState = 8192;
+			- _name = "Charging";
+			- _modifiedTimeWeak = 2.14.2017::12:52:59;
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "LogicalView";
+				- _id = GUID 64182b97-ecdb-4e84-9603-d0436d63f6cc;
+			}
+			- weakCGTime = 2.14.2017::12:52:59;
+			- strongCGTime = 2.14.2017::12:52:31;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 5c3074b3-9284-4f4e-8c53-e1f28bda8b02;
+			- _myState = 8192;
+			- _name = "RelayControl";
+			- _modifiedTimeWeak = 2.14.2017::12:53:9;
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "LogicalView";
+				- _id = GUID 64182b97-ecdb-4e84-9603-d0436d63f6cc;
+			}
+			- weakCGTime = 2.14.2017::12:53:9;
+			- strongCGTime = 2.14.2017::12:52:42;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 911c195c-0246-4fbe-aaf5-76ed87d824cc;
+			- _myState = 8192;
+			- _name = "HealthMonitoring";
+			- _modifiedTimeWeak = 2.14.2017::12:53:3;
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "LogicalView";
+				- _id = GUID 64182b97-ecdb-4e84-9603-d0436d63f6cc;
+			}
+			- weakCGTime = 2.14.2017::12:53:3;
+			- strongCGTime = 2.14.2017::12:52:53;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+	}
+	- _configurationRelatedTime = 1.2.1990::0:0:0;
+}
+
